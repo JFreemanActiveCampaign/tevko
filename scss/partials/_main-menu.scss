@@ -1,0 +1,109 @@
+// navigation that isn't on home-page
+
+.main-menu {
+	position:fixed;
+	z-index: 0;
+	width: 200px;
+	background-color: #26414B;
+	border-right: solid 5px rgb(129, 129, 129);
+	overflow-y:hidden;
+	height:100%;
+}
+
+.nav-links-container {
+	padding-top: 1.45em;
+	padding-left: 0;
+	height: 100%;
+	margin-bottom: 0;
+	@include bp(medium-screens) {
+		padding-top:5em;
+		height: 100%;
+	}
+}
+
+.nav-link {
+	list-style: none;
+	text-align: center;
+	font-size: 1.25em;
+	height: 20%;
+	display: table;
+	width: 100%;
+	&:hover {
+		opacity:.75;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		display: table-cell;
+		height: 100%;
+		vertical-align: middle;
+		border-bottom:none;
+	}
+}
+
+.inner-home {
+	background-color: #b3a9a9;
+}
+
+.inner-overview {
+	background-color: #bebe53;
+}
+
+.inner-recent {
+	background-color: #cc9c43;
+}
+
+.inner-blog {
+	background-color:rgb(136, 85, 85);
+}
+
+.inner-contact {
+	background-color:rgb(57, 83, 83);
+}
+
+
+.nav-button {
+	position: absolute;
+	cursor: pointer;
+	color: #696969;
+	top: .15em;
+	font-size: 2em;
+	transition: .5s linear;
+	z-index: 999;
+	left: .1em;
+	width: 32px;
+	height: 41px;
+	text-align: left;
+	@include bp(medium-screens) {
+		font-size:4em;
+		width:85px;
+		height:68px;
+		top:.3em;
+	}
+}
+
+.nav-button_clicked {
+	color: rgb(29, 140, 168);
+}
+
+//part of nav functionality
+
+.content {
+  position: relative;
+  top:0;
+  left:0;
+  transition: .5s ease;
+  z-index: 1;
+  width:100%;
+  background-color:white;
+}
+
+.nav-action {
+	-webkit-transform: translate(200px, 0px) ;
+	-ms-transform: translate(200px, 0px) ;
+	-o-transform: translate(200px, 0px) ;
+	-moz-transform: translate(200px, 0px) ;
+	transform: translate(200px, 0px) ;
+	opacity: .5; //creates fade effect and focus on menu
+	z-index:999;
+}

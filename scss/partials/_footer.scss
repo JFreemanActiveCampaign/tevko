@@ -1,0 +1,14 @@
+
+//footer
+
+.footer {
+	background-color:#333;
+	padding: 1em;
+	width:100%;
+	color:white;
+}
+
+.Homenav + footer .footer {
+	display:none;
+}
+

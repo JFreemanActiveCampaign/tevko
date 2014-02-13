@@ -1,0 +1,56 @@
+//fonts and icon font-sizes
+
+h1 {
+  font-size:1.5em;
+  @include bp(medium-screens) {
+    font-size:2.5em;
+  }
+}
+
+h2 {
+  font-size: 1.25em;
+  @include bp(medium-screens) {
+    font-size:2.05em;
+  }
+}
+ 
+@font-face {
+  font-family: "portfolio-icons";
+  src:url("../fonts/portfolio-icons.eot");
+  src:url("../fonts/portfolio-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/portfolio-icons.ttf") format("truetype"),
+    url("../fonts/portfolio-icons.svg#portfolio-icons") format("svg"),
+    url("../fonts/portfolio-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[data-icon]:before {
+  font-family: "portfolio-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "portfolio-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+ 
+.icon-list-bullet:before {
+   content: "a"; 
+}

@@ -1,0 +1,55 @@
+//home page -- after every edit, compile to css and paste into index.php
+
+.Homenav {
+	height:100%;
+	width:100%;
+	ul {
+		margin:0;
+		padding:0;
+		height:100%;
+  	}
+  	li {
+		list-style-type:none;
+		text-align:center;
+	} 
+}
+
+.home-link {
+	height:20%;
+	display:table;
+	width:100%;
+	transition: .5s linear;
+    &:hover {
+    	opacity: .9;
+    } 
+	a {
+ 	 	text-decoration:none;
+	    padding:rem;
+	    position:relative;
+	    color:white;
+	    text-transform:uppercase;
+	    display:table-cell;
+	    vertical-align:middle;
+	    font-size:1.5em;
+	    border-bottom:none;
+	}
+}
+
+//individual nav links
+
+
+.overview {
+  background-color: #AAAAA2;
+}
+
+.recent-work { 
+  background-color: #9E8C69;
+}
+
+.blog {
+	background-color:#745E5E;
+}
+
+.contact { 
+	background-color:#395353;
+}

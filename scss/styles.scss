@@ -1,0 +1,21 @@
+//Hello and welcome to my SCSS stylesheet
+
+@import 'normalize';
+
+@import 'mixins';
+
+@import 'grid';
+
+//partials start here
+
+@import 'partials/fonts';
+
+@import 'partials/header';
+
+// @import 'partials/home'; now we're including this css directyl on the page for faster load
+
+@import 'partials/main-menu';
+
+@import 'partials/pages';
+
+@import 'partials/footer';

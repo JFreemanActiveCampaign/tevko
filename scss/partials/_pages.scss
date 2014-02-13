@@ -1,0 +1,103 @@
+// Here we'll define css specific to page structure
+
+.wrap {
+	padding: 0 20px;
+	margin:0 auto;
+}
+
+.content {
+	background-color:rgb(49, 87, 105);
+	color:white;
+	&.recent-work {
+		p {
+			margin-top: 1em;
+		}
+		background-color: #E0E0E0;
+		color: #333;
+	}
+}
+
+.portfolio-img {
+	width:100%;
+}
+
+.img-link {
+	border-bottom:none;
+}
+
+//the following is a sub module (small enough to not need it's own partial while still relavent to the current page)
+
+.page_introduction {
+	&.portfolio {
+		margin-top:1em;
+	}
+	@include bp(medium-screens) {
+		width: 75%;
+		margin: 0 auto;
+		margin-top: 5em;
+		&.portfolio {
+			margin-top:5em;
+		}
+	}
+	img {
+		width:100%;
+		vertical-align: top;
+	}
+}
+
+.h1--page_intro {
+	text-align:center;
+	border-top:solid 3px black;
+	border-bottom: solid 3px black;
+	padding: .5em 0;
+	margin:0 auto;
+	margin:1.5em 0;
+	@include bp(medium-screens) {
+		margin: .75em 0;
+	}
+}
+
+h2 {
+	@extend .h1--page_intro;
+	border-color: rgb(0, 194, 255);
+}
+
+.h2--yellow_border {
+	border-color:rgb(245, 225, 0);
+}
+
+.h2--pink_border {
+	border-color:#DB125A;
+}
+
+//sub module body copy
+
+.bodyCopy {
+	padding:1px 0;
+	margin-bottom:1em;
+	@include bp(medium-screens) {
+		max-width: 75%;
+		margin: 0 auto;
+		margin-bottom: 1em;
+		p , ul {
+			font-size:1.2em;
+		}
+		ul {
+			line-height:1.5;
+		}
+	}
+	p {
+		margin-top:0;
+		line-height: 1.5;
+	}
+}
+
+a {
+	text-decoration: none;
+	border-bottom: dotted;
+	color:orange;
+	transition: .25s ease;
+	&:hover {
+		color:black;
+	}
+}
