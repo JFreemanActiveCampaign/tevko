@@ -1,14 +1,14 @@
 // Include gulp
-var gulp = require('gulp'), 
+var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     imagemin = require('gulp-imagemin');
 
 // autoprefix Task
 gulp.task('autoprefix', function() {
-    gulp.src('./css/*.css')
+    gulp.src('css/*.css')
     .pipe(prefix())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('css'));
 });
 
 //browser sync Task

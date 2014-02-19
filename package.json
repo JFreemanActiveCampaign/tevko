@@ -5,7 +5,7 @@
   "author": "tevko",
   "description": "personal portfolio site",
   "devDependencies": {
-    "gulp": "~3.4.0",
+    "gulp": "~3.5.2",
     "gulp-imagemin": "~0.1.4",
     "gulp-autoprefixer": "0.0.4",
     "browser-sync": "~0.5.3"

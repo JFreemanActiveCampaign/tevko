@@ -17,9 +17,9 @@
             }(document, 'script'));
             </script>
         </footer>
-        <!--dont forget to remove! -->
-        <script src='//192.168.1.6:3000/socket.io/socket.io.js'></script>
-        <script>var ___socket___ = io.connect('http://192.168.1.6:3000');</script>
-        <script src='//192.168.1.6:3001/client/browser-sync-client.min.js'></script> 
+        <!--dont forget to remove!
+        <script src='//192.168.1.4:3000/socket.io/socket.io.js'></script>
+        <script>var ___socket___ = io.connect('http://192.168.1.4:3000');</script>
+        <script src='//192.168.1.4:3001/client/browser-sync-client.min.js'></script>-->
     </body>
 </html>

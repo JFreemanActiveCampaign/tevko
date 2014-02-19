@@ -12,8 +12,8 @@
 //and then we'll get some global classes out of the way
 
 *, *:before, *:after {
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -25,4 +25,10 @@
 
 body {
 	overflow-x: hidden;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
 }
