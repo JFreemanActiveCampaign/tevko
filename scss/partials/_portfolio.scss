@@ -1,0 +1,55 @@
+
+
+//special portfolio functionality
+
+.portfolio-gallery {
+    width:100%;
+}
+
+.portfolio-item {
+    transition: .25s ease;
+    width: 50%;
+    border-right: solid 1px white;
+    float: left;
+    vertical-align: top;
+    background-size: cover;
+    height: 20em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-bottom:solid 1px white;
+    &:hover {
+       &:before {
+            box-shadow:none;
+        }
+        cursor:pointer;
+    }
+    &:nth-of-type(even) {
+        border-right:none;
+    }
+    &:before {
+        transition: .5s ease;
+        content:"";
+        position:absolute;
+        box-shadow:inset 516px 0px 0px 0px rgba(0, 0, 0, 0.55);
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+    &.streamsend {
+        background-image: url('../img/Streamsend.jpg');
+    }
+    &.veeco {
+        background-image: url('../img/veeco.jpg');
+    }
+    @include bp(medium-screens) {
+        width:25%;
+        &:nth-of-type(even) {
+            border-right:solid 1px white;
+        }
+        &:nth-of-type(4) {
+            border-right:none;
+        }
+    }
+}

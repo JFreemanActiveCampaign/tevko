@@ -1,13 +1,13 @@
 // Include gulp
 var gulp = require('gulp'),
-    prefix = require('gulp-autoprefixer'),
+    autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     imagemin = require('gulp-imagemin');
 
 // autoprefix Task
-gulp.task('autoprefix', function() {
+gulp.task('autoprefixer', function() {
     gulp.src('css/*.css')
-    .pipe(prefix())
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('css'));
 });
 
@@ -18,25 +18,15 @@ gulp.task('browser-sync', function() {
 
 //image optimization
 
-gulp.task('images', function() {
+gulp.task('imagemin', function() {
   return gulp.src('img/*.{png,jpg,gif}')
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
     .pipe(gulp.dest('img'));
 });
 
 // Default Task
-gulp.task('default', function(){
-    gulp.run('autoprefix');
-    gulp.run('browser-sync');
-    gulp.run('images');
-
-    // Watch For Changes To Our CSS
-    gulp.watch('./css/*.css', function(){
-        gulp.run('autoprefix');
-    });
-
-    //watch for changes to our images
-    gulp.watch('img', function(){
-        gulp.run('images');
-    });
+gulp.task('default',["imagemin","autoprefixer"], function(){
+    gulp.watch('img/*.{png,jpg,gif}', ["imagemin"]);
+    gulp.watch('css/*.css', ["autoprefixer"]);
+    gulp.start('browser-sync');
 });

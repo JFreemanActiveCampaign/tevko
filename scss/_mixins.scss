@@ -7,28 +7,3 @@
 		@media (min-width: 48.75em) { @content; }
 	}
 }
-
-
-//and then we'll get some global classes out of the way
-
-*, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.group:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-body {
-	overflow-x: hidden;
-}
-
-.group:after {
-    content: "";
-    display: table;
-    clear: both;
-}

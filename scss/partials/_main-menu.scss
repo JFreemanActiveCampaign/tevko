@@ -74,6 +74,18 @@
 	width: 32px;
 	height: 41px;
 	text-align: left;
+    &:after {
+        content: "Menu";
+        font-size: .5rem;
+        position: absolute;
+        top: 3em;
+        left: .8em;
+        @include bp (medium-screens) {
+            font-size: .8rem;
+            top: 4em;
+            left: 1.3em;
+        }
+    }
 	@include bp(medium-screens) {
 		font-size:4em;
 		width:85px;
