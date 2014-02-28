@@ -1,7 +1,4 @@
 <?php include("header.php"); ?>
-    <style>
-        .Homenav{height:100%;width:100%}.Homenav ul{margin:0;padding:0;height:100%}.Homenav li{list-style-type:none;text-align:center}.home-link{height:20%;display:table;width:100%;transition:.5s linear}.home-link:hover{opacity:.9}.home-link a{text-decoration:none;padding:rem;position:relative;color:#fff;text-transform:uppercase;display:table-cell;vertical-align:middle;font-size:1.5em;border-bottom:0}.overview{background-color:#AAAAA2}.recent-work{background-color:#9E8C69}.blog{background-color:#745E5E}.contact{background-color:#395353}
-    </style>
     <script>
         function setWindowHeight(){
             var windowHeight = window.innerHeight;

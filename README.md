@@ -1,4 +1,0 @@
-tevko
-=====
-
-My personal portfolio

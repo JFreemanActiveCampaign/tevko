@@ -5,7 +5,7 @@
             <div class="logo">tevko</div>
         </header>
         <div class="page_introduction wrap group overview--hero">
-            <img src="img/overview.jpg" class="first myFace"/>
+            <img src="assets/img/overview.jpg" class="first myFace"/>
             <div class="sixcol first last overview--hero_copy">
                 <h1 class="h1--page_intro">I Enjoy Building Things for the Web</h1>
                 <p>As a Front End Web Developer, I employ modern and cutting edge coding technologies to create websites, tools, and apps that look great while performing on every browser, device, and screen size. Building the web is my passion and making it better is my goal.</p>

@@ -1,0 +1,158 @@
+//globals
+
+.wrap {
+    padding: 0 20px;
+    margin:0 auto;
+    &.overview--hero {
+        padding:0;
+        @include bp(medium-screens) {
+            padding: 0 0 0 80px;
+        }
+        .overview--hero_copy {
+            padding: 0 20px;
+            @include bp(medium-screens) {
+                padding:0 80px 0 0;
+            }
+        }
+    }
+    @include bp(medium-screens) {
+        max-width:1600px;
+        padding: 0 80px;
+    }
+}
+
+.content {
+    background-color:rgb(49, 87, 105);
+    color:white;
+    &.recent-work {
+        p {
+            margin-top: 1em;
+        }
+        background-color: #E0E0E0;
+        color: #333;
+    }
+}
+
+.img-link {
+    border-bottom:none;
+}
+
+//and then we'll get some global classes out of the way
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//sub module body copy
+
+.bodyCopy {
+    padding:1px 0;
+    margin-bottom:1em;
+    @include bp(medium-screens) {
+        margin: 0 auto;
+        margin-bottom: 1em;
+        p , ul {
+            font-size:1.2em;
+        }
+        ul {
+            line-height:1.5;
+        }
+    }
+    p {
+        margin-top:0;
+        line-height: 1.5;
+    }
+}
+
+a {
+    text-decoration: none;
+    border-bottom: dotted;
+    color:orange;
+    transition: .25s ease;
+    &:hover {
+        color:black;
+    }
+}
+
+.fullWidthCopy {
+    p {
+        @include bp(medium-screens) {
+            max-width: 75%;
+            margin: auto;
+            margin-top: 1.2em;
+        }
+    }
+}
+
+//fonts and icon font-sizes
+
+h1 {
+  font-size:1.5em;
+  @include bp(medium-screens) {
+    font-size:2.5em;
+  }
+}
+
+h2 {
+  font-size: 1.25em;
+  @include bp(medium-screens) {
+    font-size:2.05em;
+  }
+}
+
+@font-face {
+  font-family: "portfolio-icons";
+  src:url("../fonts/portfolio-icons.eot");
+  src:url("../fonts/portfolio-icons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/portfolio-icons.ttf") format("truetype"),
+    url("../fonts/portfolio-icons.svg#portfolio-icons") format("svg"),
+    url("../fonts/portfolio-icons.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "portfolio-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "portfolio-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-list-bullet:before {
+   content: "a";
+}

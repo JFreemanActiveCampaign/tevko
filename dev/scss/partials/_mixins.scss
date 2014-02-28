@@ -1,0 +1,7 @@
+//Mixins
+
+@mixin bp($point) {
+    @if $point == medium-screens {
+        @media (min-width: 48.75em) { @content; }
+    }
+}
