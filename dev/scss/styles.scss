@@ -7,8 +7,6 @@
 
 @import 'partials/mixins'; // MQ's, Functions, placeholders, and mixins to be used throughout our SASS Files
 
-@import 'compass'; //sometimes this is necessary, sometimes it's not. Remove if you wish
-
 @import 'partials/globals'; // Classes, fonts, and other rules to be used throughout our SASS files
 
 @import 'partials/pages'; // Need a CSS class that targets only your 'about-us' page? You'd put that here
