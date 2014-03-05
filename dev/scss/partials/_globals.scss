@@ -3,18 +3,6 @@
 .wrap {
     padding: 0 20px;
     margin:0 auto;
-    &.overview--hero {
-        padding:0;
-        @include bp(medium-screens) {
-            padding: 0 0 0 80px;
-        }
-        .overview--hero_copy {
-            padding: 0 20px;
-            @include bp(medium-screens) {
-                padding:0 80px 0 0;
-            }
-        }
-    }
     @include bp(medium-screens) {
         max-width:1600px;
         padding: 0 80px;
@@ -22,14 +10,12 @@
 }
 
 .content {
-    background-color:rgb(49, 87, 105);
-    color:white;
+    background-color: $content-bg-clr;
+    color:$footer-bg;
     &.recent-work {
         p {
             margin-top: 1em;
         }
-        background-color: #E0E0E0;
-        color: #333;
     }
 }
 
@@ -86,7 +72,7 @@ a {
     color:orange;
     transition: .25s ease;
     &:hover {
-        color:black;
+        color:$a-hvr-clr;
     }
 }
 

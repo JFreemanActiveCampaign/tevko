@@ -7,11 +7,11 @@
 
 @import 'partials/mixins'; // MQ's, Functions, placeholders, and mixins to be used throughout our SASS Files
 
+@import 'partials/colors'; // Here we store all of our colors as variables. Makes Changing colors super easy!
+
 @import 'partials/globals'; // Classes, fonts, and other rules to be used throughout our SASS files
 
 @import 'partials/pages'; // Need a CSS class that targets only your 'about-us' page? You'd put that here
-
-@import 'partials/colors'; // Here we store all of our colors as variables. Makes Changing colors super easy!
 
 @import 'partials/grid';
 
@@ -21,7 +21,7 @@
 
 @import 'modules/footer'; //everything that goes in the footer
 
-@import 'modules/home-menu'; // Menu on the home page
+@import 'modules/main-menu'; // Menu not on the home page
 
 @import 'modules/portfolio'; //portfolio functionality on portfolio page
 

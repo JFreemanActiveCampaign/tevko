@@ -1,18 +1,17 @@
 <?php include("header.php"); ?>
     <?php include("menu.php"); ?>
-    <div class="content">
+    <div class="content overview_page">
         <header class="header--inner">
             <div class="logo">tevko</div>
         </header>
-        <div class="page_introduction wrap group overview--hero">
-            <img src="assets/img/overview.jpg" class="first myFace"/>
-            <div class="sixcol first last overview--hero_copy">
-                <h1 class="h1--page_intro">I Enjoy Building Things for the Web</h1>
-                <p>As a Front End Web Developer, I employ modern and cutting edge coding technologies to create websites, tools, and apps that look great while performing on every browser, device, and screen size. Building the web is my passion and making it better is my goal.</p>
-            </div>
-        </div>
         <section class="page wrap">
-
+            <div class="hero">
+                <img src="assets/img/overview.jpg" class="myFace"/>
+                <div class="hero_copy">
+                    <h1 class="h1--page_intro">I Enjoy Building Things for the Web</h1>
+                    <p>As a Front End Web Developer, I employ modern and cutting edge coding technologies to create websites, tools, and apps that look great while performing on every browser, device, and screen size. Building the web is my passion and making it better is my goal.</p>
+                </div>
+            </div>
             <article class="bodyCopy group">
 
                 <div class="sixcol first">

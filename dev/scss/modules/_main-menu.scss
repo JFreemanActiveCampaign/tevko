@@ -4,8 +4,8 @@
 	position:fixed;
 	z-index: 0;
 	width: 200px;
-	background-color: #26414B;
-	border-right: solid 5px rgb(129, 129, 129);
+	background-color: $footer-bg;
+	border-right: solid 5px $main-menu-brdr-right;
 	overflow-y:hidden;
 	height:100%;
 }
@@ -42,30 +42,30 @@
 }
 
 .inner-home {
-	background-color: #b3a9a9;
+	background-color: $home-menu-clr;
 }
 
 .inner-overview {
-	background-color: #bebe53;
+	background-color: $overview-menu-clr;
 }
 
 .inner-recent {
-	background-color: #cc9c43;
+	background-color: $recent-menu-clr;
 }
 
 .inner-blog {
-	background-color:rgb(136, 85, 85);
+	background-color:$blog-menu-clr;
 }
 
 .inner-contact {
-	background-color:rgb(57, 83, 83);
+	background-color:$contact-menu-clr;
 }
 
 
 .nav-button {
 	position: absolute;
 	cursor: pointer;
-	color: #696969;
+	color: $nav-button-clr;
 	top: .15em;
 	font-size: 2em;
 	transition: .5s linear;
@@ -95,7 +95,7 @@
 }
 
 .nav-button_clicked {
-	color: rgb(29, 140, 168);
+	color: $nav-button_clicked;
 }
 
 //part of nav functionality
@@ -110,10 +110,6 @@
 }
 
 .nav-action {
-	-webkit-transform: translate(200px, 0px) ;
-	-ms-transform: translate(200px, 0px) ;
-	-o-transform: translate(200px, 0px) ;
-	-moz-transform: translate(200px, 0px) ;
 	transform: translate(200px, 0px) ;
 	opacity: .5; //creates fade effect and focus on menu
 	z-index:999;

@@ -5,7 +5,7 @@
 .header {
   vertical-align: middle;
     display: table-cell;
-    background-color:#333;
+    background-color:$footer-bg;
 }
 
 .logo {
@@ -31,7 +31,7 @@
 
 .header--inner {
   text-align:center;
-  background-color:#333;
+  background-color:$footer-bg;
   padding: 1.5em 4em;
   position:relative;
   font-size:.5em;

@@ -1,43 +1,6 @@
 //Pages
 
-.page_introduction {
-    &.portfolio {
-        margin-top:1em;
-    }
-    @include bp(medium-screens) {
-        margin: 0 auto;
-        margin-top: 5em;
-        &.portfolio {
-            margin-top:5em;
-            width: 75%;
-        }
-    }
-    img {
-        width:100%;
-        vertical-align: top;
-    }
-    .myFace {
-        @include bp(medium-screens) {
-            position: relative;
-            float: left;
-            width:40.055248616%
-        }
-    }
-    p {
-        @include bp(medium-screens) {
-            font-size: 1.2em;
-        }
-    }
-}
 
-.overview--hero {
-    @include bp(medium-screens) {
-        margin-bottom: 3em;
-        h1 {
-            margin-top:0;
-        }
-    }
-}
 
 .h1--page_intro {
     text-align:center;
@@ -53,18 +16,18 @@
 
 h2 {
     @extend .h1--page_intro;
-    border-color: rgb(0, 194, 255);
+    border-color: $h2-main-brdr-clr;
 }
 
 .h2--yellow_border {
-    border-color:rgb(245, 225, 0);
+    border-color:$h2-main-brdr-yllw;
 }
 
 .h2--pink_border {
-    border-color:#DB125A;
+    border-color:$h2-main-brdr-pnk;
     margin: 2em 0;
 }
 
 .h2--dark_border {
-    border-color:#A2A2A2;
+    border-color:$h2-main-brdr-drk;
 }

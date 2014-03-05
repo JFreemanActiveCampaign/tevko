@@ -9,7 +9,7 @@
 .portfolio-item {
     transition: .25s ease;
     width: 50%;
-    border-right: solid 1px white;
+    border-right: solid 1px $portfolio-item-brdr-right;
     float: left;
     vertical-align: top;
     background-size: cover;
@@ -17,7 +17,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    border-bottom:solid 1px white;
+    border-bottom:solid 1px $portfolio-item-brdr-right;
     &:hover {
        &:before {
             box-shadow:none;
@@ -46,7 +46,7 @@
     @include bp(medium-screens) {
         width:25%;
         &:nth-of-type(even) {
-            border-right:solid 1px white;
+            border-right:solid 1px $portfolio-item-brdr-right;
         }
         &:nth-of-type(4) {
             border-right:none;

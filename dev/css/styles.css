@@ -161,29 +161,16 @@ td, th {
 .wrap {
   padding: 0 20px;
   margin: 0 auto; }
-  .wrap.overview--hero {
-    padding: 0; }
-    @media (min-width: 48.75em) {
-      .wrap.overview--hero {
-        padding: 0 0 0 80px; } }
-    .wrap.overview--hero .overview--hero_copy {
-      padding: 0 20px; }
-      @media (min-width: 48.75em) {
-        .wrap.overview--hero .overview--hero_copy {
-          padding: 0 80px 0 0; } }
   @media (min-width: 48.75em) {
     .wrap {
       max-width: 1600px;
       padding: 0 80px; } }
 
 .content {
-  background-color: #315769;
-  color: white; }
-  .content.recent-work {
-    background-color: #E0E0E0;
-    color: #333; }
-    .content.recent-work p {
-      margin-top: 1em; }
+  background-color: #F8F8F8;
+  color: #333; }
+  .content.recent-work p {
+    margin-top: 1em; }
 
 .img-link {
   border-bottom: none; }
@@ -277,33 +264,6 @@ h2 {
 
 .icon-list-bullet:before {
   content: "a"; }
-
-.page_introduction.portfolio {
-  margin-top: 1em; }
-@media (min-width: 48.75em) {
-  .page_introduction {
-    margin: 0 auto;
-    margin-top: 5em; }
-    .page_introduction.portfolio {
-      margin-top: 5em;
-      width: 75%; } }
-.page_introduction img {
-  width: 100%;
-  vertical-align: top; }
-@media (min-width: 48.75em) {
-  .page_introduction .myFace {
-    position: relative;
-    float: left;
-    width: 40.05525%; } }
-@media (min-width: 48.75em) {
-  .page_introduction p {
-    font-size: 1.2em; } }
-
-@media (min-width: 48.75em) {
-  .overview--hero {
-    margin-bottom: 3em; }
-    .overview--hero h1 {
-      margin-top: 0; } }
 
 .h1--page_intro, h2 {
   text-align: center;
@@ -421,7 +381,7 @@ h2 {
   position: fixed;
   z-index: 0;
   width: 200px;
-  background-color: #26414B;
+  background-color: #333;
   border-right: solid 5px #818181;
   overflow-y: hidden;
   height: 100%; }
@@ -454,16 +414,16 @@ h2 {
     border-bottom: none; }
 
 .inner-home {
-  background-color: #b3a9a9; }
+  background-color: #533C3C; }
 
 .inner-overview {
-  background-color: #bebe53; }
+  background-color: #AAAAA2; }
 
 .inner-recent {
-  background-color: #cc9c43; }
+  background-color: #9E8C69; }
 
 .inner-blog {
-  background-color: #885555; }
+  background-color: #745E5E; }
 
 .inner-contact {
   background-color: #395353; }
@@ -499,7 +459,7 @@ h2 {
       top: 0.3em; } }
 
 .nav-button_clicked {
-  color: #1d8ca8; }
+  color: white; }
 
 .content {
   position: relative;
@@ -510,10 +470,6 @@ h2 {
   width: 100%; }
 
 .nav-action {
-  -webkit-transform: translate(200px, 0px);
-  -ms-transform: translate(200px, 0px);
-  -o-transform: translate(200px, 0px);
-  -moz-transform: translate(200px, 0px);
   transform: translate(200px, 0px);
   opacity: 0.5;
   z-index: 999; }
