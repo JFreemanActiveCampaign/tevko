@@ -13,7 +13,6 @@
                 </div>
             </div>
             <article class="bodyCopy group">
-
                 <div class="sixcol first">
                     <h2>The Stack</h2>
                     <p>I use the following technologies, code systems, and languages:
