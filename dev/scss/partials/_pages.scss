@@ -18,16 +18,3 @@ h2 {
     @extend .h1--page_intro;
     border-color: $h2-main-brdr-clr;
 }
-
-.h2--yellow_border {
-    border-color:$h2-main-brdr-yllw;
-}
-
-.h2--pink_border {
-    border-color:$h2-main-brdr-pnk;
-    margin: 2em 0;
-}
-
-.h2--dark_border {
-    border-color:$h2-main-brdr-drk;
-}

@@ -1,0 +1,16 @@
+
+.hero {
+    margin-top:3em;
+}
+
+.hero--image {
+    max-width:100%;
+}
+
+.hero--copy {
+    p {
+        @include bp(medium-screens) {
+            font-size: 1.2em;
+        }
+    }
+}

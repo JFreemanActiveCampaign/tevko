@@ -4,7 +4,7 @@
     padding: 0 20px;
     margin:0 auto;
     @include bp(medium-screens) {
-        max-width:1600px;
+        max-width:920px;
         padding: 0 80px;
     }
 }
@@ -12,11 +12,6 @@
 .content {
     background-color: $content-bg-clr;
     color:$footer-bg;
-    &.recent-work {
-        p {
-            margin-top: 1em;
-        }
-    }
 }
 
 .img-link {
@@ -69,20 +64,10 @@ body {
 a {
     text-decoration: none;
     border-bottom: dotted;
-    color:orange;
+    color:$main-link-color;
     transition: .25s ease;
     &:hover {
         color:$a-hvr-clr;
-    }
-}
-
-.fullWidthCopy {
-    p {
-        @include bp(medium-screens) {
-            max-width: 75%;
-            margin: auto;
-            margin-top: 1.2em;
-        }
     }
 }
 
