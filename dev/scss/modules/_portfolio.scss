@@ -2,12 +2,13 @@
 
 //special portfolio functionality
 
+
 .portfolio-gallery {
     width:100%;
 }
 
 .portfolio-item {
-    transition: .25s ease;
+    transition: 1s ease;
     width: 50%;
     border-right: solid 1px $portfolio-item-brdr-right;
     float: left;
@@ -18,9 +19,13 @@
     margin: 0;
     padding: 0;
     border-bottom:solid 1px $portfolio-item-brdr-right;
+    backface-visibility:hidden;
     &:hover {
+        backface-visibility:hidden;
        &:before {
-            box-shadow:none;
+            transform: translate(400px, 0px) ;
+            background-color:black;
+           backface-visibility:hidden;
         }
         cursor:pointer;
     }
@@ -28,20 +33,13 @@
         border-right:none;
     }
     &:before {
-        transition: .5s ease;
+        transition: 1s ease;
         content:"";
         position:absolute;
-        box-shadow:inset 516px 0px 0px 0px rgba(0, 0, 0, 0.55);
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-    }
-    &.streamsend {
-        background-image: url('../img/Streamsend.jpg');
-    }
-    &.veeco {
-        background-image: url('../img/veeco.jpg');
+        background-color:rgba(0, 0, 0, 0.53);
+        height:320px;
+        width:100%;
+        backface-visibility:hidden;
     }
     @include bp(medium-screens) {
         width:25%;
@@ -50,6 +48,17 @@
         }
         &:nth-of-type(4) {
             border-right:none;
+        }
+    }
+}
+
+//this mixin is only relative to this module, which is why it is found here
+
+//define each portfolio item img
+@each $portfolio-img-class in streamsend, veeco, propane, deals, png, bermuda, lawn {
+    .portfolio-item {
+        &.#{$portfolio-img-class} {
+            background-image:url('../img/#{$portfolio-img-class}-thumb.jpg');
         }
     }
 }

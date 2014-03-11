@@ -8,6 +8,7 @@
 	border-right: solid 5px $main-menu-brdr-right;
 	overflow-y:hidden;
 	height:100%;
+    backface-visibility:hidden;
 }
 
 .nav-links-container {
@@ -101,9 +102,6 @@
 //part of nav functionality
 
 .content {
-  position: relative;
-  top:0;
-  left:0;
   transition: .5s ease;
   z-index: 1;
   width:100%;
