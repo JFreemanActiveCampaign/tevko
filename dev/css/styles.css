@@ -166,6 +166,16 @@ td, th {
       max-width: 920px;
       padding: 0 80px; } }
 
+.disable-hover {
+  pointer-events: none; }
+
+.page {
+  padding-top: 1em;
+  position: relative; }
+  @media (min-width: 48.75em) {
+    .page {
+      padding-top: 4.5em; } }
+
 .content {
   background-color: #F8F8F8;
   color: #333;
@@ -332,7 +342,7 @@ h2 {
 .logo {
   margin: 0;
   text-transform: uppercase;
-  color: white;
+  color: #ACACAC;
   display: inline-block;
   font-size: 1.5em;
   padding: 0 0.25em;
@@ -343,15 +353,35 @@ h2 {
 
 .header--inner {
   text-align: center;
-  background-color: #333;
   padding: 1.5em 4em;
   position: relative;
-  font-size: 0.5em; }
+  font-size: 0.5em;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 998;
+  width: 100%; }
   .header--inner h1 {
     padding: 0; }
   @media (min-width: 48.75em) {
     .header--inner {
-      font-size: 1.25em; } }
+      font-size: 1.25em;
+      animation-name: rotateInDownRight;
+      animation-fill-mode: both;
+      animation-duration: 2.5s;
+      transition: 1s ease; } }
+
+.disable-hover .header--inner {
+  opacity: 0.75; }
+
+@-webkit-keyframes rotateInDownRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(90deg); }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0); } }
 
 .footer {
   background-color: #333;
@@ -416,7 +446,7 @@ h2 {
   background-color: #395353; }
 
 .nav-button {
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   color: #696969;
   top: 0.15em;
@@ -459,12 +489,12 @@ h2 {
   z-index: 999; }
 
 .portfolio-gallery {
-  width: 100%; }
+  width: 100%;
+  margin-top: 1em; }
 
 .portfolio-item {
   transition: 1s ease;
   width: 50%;
-  border-right: solid 1px white;
   float: left;
   vertical-align: top;
   background-size: cover;
@@ -493,11 +523,7 @@ h2 {
     backface-visibility: hidden; }
   @media (min-width: 48.75em) {
     .portfolio-item {
-      width: 25%; }
-      .portfolio-item:nth-of-type(even) {
-        border-right: solid 1px white; }
-      .portfolio-item:nth-of-type(4) {
-        border-right: none; } }
+      width: 33.33333%; } }
 
 .portfolio-item.streamsend {
   background-image: url('../img/streamsend-thumb.jpg'); }
@@ -519,6 +545,30 @@ h2 {
 
 .portfolio-item.lawn {
   background-image: url('../img/lawn-thumb.jpg'); }
+
+.portfolio-item.practice {
+  background-image: url('../img/practice-thumb.jpg'); }
+
+svg {
+  max-width: 110px;
+  height: 60px; }
+
+.logoAnimated {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: white;
+  fill: transparent;
+  animation: draw-fill 10s forwards; }
+
+@keyframes draw-fill {
+  15% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 2000; }
+
+  100% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 2000;
+    fill: white; } }
 
 .Homenav {
   height: 100%;

@@ -15,11 +15,11 @@
 .logo {
     margin:0;
     text-transform:uppercase;
-    color:white;
+    color:$header-txt-fade;
     display:inline-block;
     font-size: 1.5em;
     padding: 0 .25em;
-  font-weight: bold;
+    font-weight: bold;
     &:after {
     content:" // Front End Web Developer";
     color:gray;
@@ -30,14 +30,39 @@
 
 .header--inner {
   text-align:center;
-  background-color:$footer-bg;
   padding: 1.5em 4em;
   position:relative;
   font-size:.5em;
+  position:fixed;
+  top:0;
+  background-color:white;
+  z-index:998;
+  width:100%;
   h1 {
     padding:0;
   }
   @include bp(medium-screens) {
     font-size:1.25em;
+    animation-name: rotateInDownRight;
+    animation-fill-mode: both;
+    animation-duration:2.5s;
+    transition:1s ease;
   }
+}
+
+.disable-hover .header--inner {
+    opacity:.75;
+}
+
+//rotate animation for header
+
+@-webkit-keyframes rotateInDownRight {
+    0% {
+        //background-color: $footer-bg;
+        transform-origin: right bottom;
+        transform: rotate(90deg);
+    }   100% {
+        transform-origin: right bottom;
+        transform: rotate(0);
+    }
 }

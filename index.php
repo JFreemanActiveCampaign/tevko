@@ -11,7 +11,13 @@
         <ul>
             <li class="home-link header">
                 <header class="header">
-                    <div class="logo">tevko</div>
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <text class="logoAnimated colorfill" x="0" y="60">
+                                // Tevko
+                            </text>
+                        </svg>
+                    </div>
                 </header>
             </li>
 

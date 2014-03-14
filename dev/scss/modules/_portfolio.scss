@@ -5,12 +5,12 @@
 
 .portfolio-gallery {
     width:100%;
+    margin-top: 1em;
 }
 
 .portfolio-item {
     transition: 1s ease;
     width: 50%;
-    border-right: solid 1px $portfolio-item-brdr-right;
     float: left;
     vertical-align: top;
     background-size: cover;
@@ -42,20 +42,14 @@
         backface-visibility:hidden;
     }
     @include bp(medium-screens) {
-        width:25%;
-        &:nth-of-type(even) {
-            border-right:solid 1px $portfolio-item-brdr-right;
-        }
-        &:nth-of-type(4) {
-            border-right:none;
-        }
+        width:33.33333%;
     }
 }
 
 //this mixin is only relative to this module, which is why it is found here
 
 //define each portfolio item img
-@each $portfolio-img-class in streamsend, veeco, propane, deals, png, bermuda, lawn {
+@each $portfolio-img-class in streamsend, veeco, propane, deals, png, bermuda, lawn, practice {
     .portfolio-item {
         &.#{$portfolio-img-class} {
             background-image:url('../img/#{$portfolio-img-class}-thumb.jpg');

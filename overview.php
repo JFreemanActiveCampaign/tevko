@@ -6,7 +6,7 @@
         </header>
         <section class="page wrap">
             <div class="hero">
-                <img src="assets/img/overview.jpg" class="hero--image"/>
+                <img data-borealis-srcs="assets/img/overview_small.jpg, 300: assets/img/overview_small.jpg, 500: assets/img/overview.jpg" alt="A picture of my face">
                 <div class="hero--copy">
                     <h1 class="h1--page_intro">I Enjoy Building Things for the Web</h1>
                     <p>As a Front End Web Developer, I employ modern and cutting edge coding technologies to create websites, tools, and apps that look great while performing on every browser, device, and screen size. Building the web is my passion and making it better is my goal.</p>
