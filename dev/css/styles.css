@@ -170,8 +170,7 @@ td, th {
   pointer-events: none; }
 
 .page {
-  padding-top: 1em;
-  position: relative; }
+  padding-top: 1em; }
   @media (min-width: 48.75em) {
     .page {
       padding-top: 4.5em; } }
@@ -179,7 +178,8 @@ td, th {
 .content {
   background-color: #F8F8F8;
   color: #333;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  position: relative; }
 
 .img-link {
   border-bottom: none; }

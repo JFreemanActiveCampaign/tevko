@@ -173,8 +173,7 @@ td, th {
   pointer-events: none; }
 
 .page {
-  padding-top: 1em;
-  position: relative; }
+  padding-top: 1em; }
   @media (min-width: 48.75em) {
     .page {
       padding-top: 4.5em; } }
@@ -184,7 +183,8 @@ td, th {
   color: #333;
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  position: relative; }
 
 .img-link {
   border-bottom: none; }

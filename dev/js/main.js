@@ -16,13 +16,6 @@
     		$('.nav-button').removeClass('nav-button_clicked');
     	}
     });
-    //cool but non-functional header hover and scroll stuff
-    $('.nav-button , .header--inner').hover(
-        function () {
-            $('.header--inner').css('background-color', '#333');
-        }, function () {
-            $('.header--inner').css('background-color', 'white');
-    });
 
     //disable click and hover events on scroll, prevents browser repaint
     var body = document.body,

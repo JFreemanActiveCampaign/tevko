@@ -15,7 +15,6 @@
 
 .page {
     padding-top: 1em;
-    position:relative;
     @include bp(medium-screens) {
         padding-top: 4.5em;
     }
@@ -25,6 +24,7 @@
     background-color: $content-bg-clr;
     color:$footer-bg;
     backface-visibility: hidden;
+    position:relative;
 }
 
 .img-link {
