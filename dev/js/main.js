@@ -30,5 +30,4 @@
         body.classList.remove('disable-hover')
       },500);
     }, false);
-
 })(jQuery, window);

@@ -1,6 +1,12 @@
 
 .hero {
     margin-top:3em;
+    .img-caption {
+        font-size: .75em;
+        font-style: italic;
+        color: $img-caption;
+        text-align:center;
+    }
 }
 
 .hero--image {

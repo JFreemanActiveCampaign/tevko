@@ -25,6 +25,7 @@
     color:$footer-bg;
     backface-visibility: hidden;
     position:relative;
+    min-height:100%;
 }
 
 .img-link {
@@ -98,6 +99,10 @@ h2 {
   @include bp(medium-screens) {
     font-size:2.05em;
   }
+}
+
+h1 , h2 {
+    font-family: 'Telex', sans-serif;
 }
 
 @font-face {

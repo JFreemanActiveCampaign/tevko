@@ -19,13 +19,9 @@
     margin: 0;
     padding: 0;
     border-bottom:solid 1px $portfolio-item-brdr-right;
-    backface-visibility:hidden;
     &:hover {
-        backface-visibility:hidden;
        &:before {
-            transform: translate(400px, 0px) ;
-            background-color:black;
-           backface-visibility:hidden;
+            background-color:transparent;
         }
         cursor:pointer;
     }
@@ -39,7 +35,6 @@
         background-color:rgba(0, 0, 0, 0.53);
         height:320px;
         width:100%;
-        backface-visibility:hidden;
     }
     @include bp(medium-screens) {
         width:33.33333%;
@@ -49,7 +44,7 @@
 //this mixin is only relative to this module, which is why it is found here
 
 //define each portfolio item img
-@each $portfolio-img-class in streamsend, veeco, propane, deals, png, bermuda, lawn, practice {
+@each $portfolio-img-class in streamsend, veeco, propane, deals, png, bermuda, lawn, practice, travimp {
     .portfolio-item {
         &.#{$portfolio-img-class} {
             background-image:url('../img/#{$portfolio-img-class}-thumb.jpg');

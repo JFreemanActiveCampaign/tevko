@@ -179,7 +179,8 @@ td, th {
   background-color: #F8F8F8;
   color: #333;
   backface-visibility: hidden;
-  position: relative; }
+  position: relative;
+  min-height: 100%; }
 
 .img-link {
   border-bottom: none; }
@@ -235,6 +236,9 @@ h2 {
     h2 {
       font-size: 2.05em; } }
 
+h1, h2 {
+  font-family: 'Telex', sans-serif; }
+
 @font-face {
   font-family: "portfolio-icons";
   src: url("../fonts/portfolio-icons.eot");
@@ -284,6 +288,9 @@ h2 {
 
 .content.recent-work {
   background-color: white; }
+
+.contact_page .hero h1 {
+  text-align: center; }
 
 @media (min-width: 48.75em) {
   /* 4.85%;  } /* grid_1  */
@@ -346,7 +353,8 @@ h2 {
   display: inline-block;
   font-size: 1.5em;
   padding: 0 0.25em;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: 'Telex', sans-serif; }
   .logo:after {
     content: " // Front End Web Developer";
     color: gray; }
@@ -428,7 +436,8 @@ h2 {
     display: table-cell;
     height: 100%;
     vertical-align: middle;
-    border-bottom: none; }
+    border-bottom: none;
+    font-family: 'Telex', sans-serif; }
 
 .inner-home {
   background-color: #533C3C; }
@@ -502,15 +511,11 @@ h2 {
   position: relative;
   margin: 0;
   padding: 0;
-  border-bottom: solid 1px white;
-  backface-visibility: hidden; }
+  border-bottom: solid 1px white; }
   .portfolio-item:hover {
-    backface-visibility: hidden;
     cursor: pointer; }
     .portfolio-item:hover:before {
-      transform: translate(400px, 0px);
-      background-color: black;
-      backface-visibility: hidden; }
+      background-color: transparent; }
   .portfolio-item:nth-of-type(even) {
     border-right: none; }
   .portfolio-item:before {
@@ -519,8 +524,7 @@ h2 {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.53);
     height: 320px;
-    width: 100%;
-    backface-visibility: hidden; }
+    width: 100%; }
   @media (min-width: 48.75em) {
     .portfolio-item {
       width: 33.33333%; } }
@@ -548,6 +552,9 @@ h2 {
 
 .portfolio-item.practice {
   background-image: url('../img/practice-thumb.jpg'); }
+
+.portfolio-item.travimp {
+  background-image: url('../img/travimp-thumb.jpg'); }
 
 svg {
   max-width: 110px;
@@ -611,7 +618,8 @@ svg {
     display: table-cell;
     vertical-align: middle;
     font-size: 1.5em;
-    border-bottom: none; }
+    border-bottom: none;
+    font-family: 'Telex', sans-serif; }
 
 .overview {
   background-color: #AAAAA2; }
@@ -627,6 +635,11 @@ svg {
 
 .hero {
   margin-top: 3em; }
+  .hero .img-caption {
+    font-size: 0.75em;
+    font-style: italic;
+    color: #929292;
+    text-align: center; }
 
 .hero--image {
   max-width: 100%; }
