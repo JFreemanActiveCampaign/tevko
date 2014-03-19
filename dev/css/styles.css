@@ -647,3 +647,38 @@ svg {
 @media (min-width: 48.75em) {
   .hero--copy p {
     font-size: 1.2em; } }
+
+.project-item {
+  width: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  text-align: center;
+  color: white;
+  position: relative;
+  vertical-align: top;
+  font-size: 1.25em; }
+  .project-item p {
+    position: relative; }
+  .project-item:hover {
+    cursor: pointer; }
+    .project-item:hover:before {
+      background-color: transparent; }
+  .project-item:before {
+    transition: 1s ease;
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.53);
+    height: 250px;
+    width: 100%;
+    left: 0;
+    top: 0; }
+
+.project-item.practice {
+  background-image: url('../img/practice-thumb.jpg');
+  background-size: cover; }
+
+.project-item.resources {
+  background-image: url('../img/resources-thumb.jpg');
+  background-size: cover; }
