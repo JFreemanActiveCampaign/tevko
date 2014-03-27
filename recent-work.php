@@ -6,38 +6,38 @@
         </header>
         <section class="page">
             <div class="portfolio-gallery group">
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item streamsend">
                     </div>
                 </a>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item veeco">
                     </div>
                 </a>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item propane">
                     </div>
                 </a>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item deals">
                     </div>
                 </a>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item png">
                     </div>
                 </a>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item bermuda">
                     </div>
                 </a>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item lawn">
                     </div>
                 </a>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item practice">
                     </div>
-                <a href="/coming-soon.php">
+                <a href="/coming-soon">
                     <div class="portfolio-item travimp">
                     </div>
                 </a>
