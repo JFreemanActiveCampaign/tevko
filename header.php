@@ -23,7 +23,7 @@
         </style>
         <div class="ye-olde-browsers">
         <p>Hey! Your browser is out of date! To see this site (and the rest of the web) <br> as it is intended to be viewed, <a href="http://browsehappy.com/">Click Here</a> to update your browser!</p>
-        <div class="close">X<small>&nbsp;(close)</small></div>
+        <div class="Oldclose">X<small>&nbsp;(close)</small></div>
         </div>
     <![endif]-->
 </head>
