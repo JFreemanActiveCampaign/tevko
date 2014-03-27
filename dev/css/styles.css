@@ -349,7 +349,7 @@ h2 {
 .logo {
   margin: 0;
   text-transform: uppercase;
-  color: #ACACAC;
+  color: white;
   display: inline-block;
   font-size: 1.5em;
   padding: 0 0.25em;
@@ -682,3 +682,73 @@ svg {
 .project-item.resources {
   background-image: url('../img/resources-thumb.jpg');
   background-size: cover; }
+
+.project-item.wpResponsive {
+  background-image: url('../img/wpResponsive-thumb.jpg');
+  background-size: cover; }
+
+.theStack {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.theStack--item {
+  list-style-type: none;
+  word-break: break-word;
+  color: white;
+  background-color: orange;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  transition: 0.5s ease; }
+  @media (min-width: 48.75em) {
+    .theStack--item {
+      opacity: 0.2;
+      position: relative;
+      top: 20px;
+      left: -50px;
+      transition: 0.5s ease; }
+      .theStack--item.skillMagic {
+        opacity: 1;
+        transform: translate(50px, 20px);
+        backface-visibility: hidden; } }
+  .theStack--item.css {
+    width: 97%; }
+  .theStack--item.html {
+    width: 98%; }
+  .theStack--item.js {
+    width: 90%; }
+  .theStack--item.php {
+    width: 85%; }
+  .theStack--item.sql {
+    width: 45%; }
+  .theStack--item.ruby {
+    width: 60%; }
+  .theStack--item.node {
+    width: 75%; }
+  .theStack--item.json {
+    width: 20%; }
+  .theStack--item.ajax {
+    width: 49%; }
+  .theStack--item.mvc {
+    width: 51%; }
+  .theStack--item.responsive {
+    width: 100%; }
+  .theStack--item.wp {
+    width: 90%; }
+  .theStack--item.c5 {
+    width: 89%; }
+  .theStack--item.drupal {
+    width: 65%; }
+  .theStack--item.magento {
+    width: 50%; }
+  .theStack--item.github {
+    width: 100%; }
+  .theStack--item.adobe {
+    width: 87%; }
+  .theStack--item.mobile {
+    width: 91%; }
+  .theStack--item.template {
+    width: 90%; }
+  .theStack--item.static {
+    width: 15%;
+    height: 115px; }

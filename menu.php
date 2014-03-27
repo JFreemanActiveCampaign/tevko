@@ -1,14 +1,14 @@
 <nav class="main-menu">
     <ul class="nav-links-container">
-        <li class="nav-link inner-home"><a href="#">Home</a>
+        <li class="nav-link inner-home"><a href="/">Home</a>
         </li>
-        <li class="nav-link inner-overview"><a href="#">Overview</a>
+        <li class="nav-link inner-overview"><a href="/overview">Overview</a>
         </li>
-        <li class="nav-link inner-recent"><a href="#">Recent Work</a>
+        <li class="nav-link inner-recent"><a href="/recent-work">Recent Work</a>
         </li>
-        <li class="nav-link inner-blog"><a href="#">Blog</a>
+        <li class="nav-link inner-blog"><a href="/coming-soon">Blog</a>
         </li>
-        <li class="nav-link inner-contact"><a href="#">Contact</a>
+        <li class="nav-link inner-contact"><a href="/contact">Contact</a>
         </li>
     </ul>
 </nav>

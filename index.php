@@ -12,26 +12,22 @@
             <li class="home-link header">
                 <header class="header">
                     <div class="logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <text class="logoAnimated colorfill" x="0" y="60">
-                                // Tevko
-                            </text>
-                        </svg>
+                        // Tevko
                     </div>
                 </header>
             </li>
 
             <li class="home-link overview">
-                <a href="#">overview</a>
+                <a href="overview">overview</a>
             </li>
             <li class="home-link recent-work">
-                <a href="#">Recent work</a>
+                <a href="recent-work">Recent work</a>
             </li>
             <li class="home-link blog">
-                <a href="#">Blog</a>
+                <a href="coming-soon">Blog</a>
             </li>
             <li class="home-link contact">
-                <a href="#">contact</a>
+                <a href="contact">contact</a>
             </li>
         </ul>
     </nav>

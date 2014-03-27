@@ -35,7 +35,7 @@
 //this mixin is only relative to this module, which is why it is found here
 
 //define each project item img
-@each $project-img-class in practice, resources {
+@each $project-img-class in practice, resources,wpResponsive {
     .project-item {
         &.#{$project-img-class} {
             background-image:url('../img/#{$project-img-class}-thumb.jpg');

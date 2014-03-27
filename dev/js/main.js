@@ -26,8 +26,20 @@
         body.classList.add('disable-hover')
       }
 
-      timer = setTimeout(function(){
+      timer = setTimeout(function() {
         body.classList.remove('disable-hover')
       },500);
     }, false);
+    //if our skill element is visible, do something cool to it
+    $(window).scroll(function() {
+        $('.theStack--item').each(function() {
+            if($(this).visible()) {
+                $(this).addClass('skillMagic');
+            }
+        });
+    });
+    //olde borwsers
+    $('.Oldclose').click(function() {
+        $('.ye-olde-browsers').hide();
+    });
 })(jQuery, window);

@@ -6,24 +6,41 @@
         </header>
         <section class="page">
             <div class="portfolio-gallery group">
-                <div class="portfolio-item streamsend">
-                </div>
-                <div class="portfolio-item veeco">
-                </div>
-                <div class="portfolio-item propane">
-                </div>
-                <div class="portfolio-item deals">
-                </div>
-                <div class="portfolio-item png">
-                </div>
-                <div class="portfolio-item bermuda">
-                </div>
-                <div class="portfolio-item lawn">
-                </div>
-                <div class="portfolio-item practice">
-                </div>
-                <div class="portfolio-item travimp">
-                </div>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item streamsend">
+                    </div>
+                </a>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item veeco">
+                    </div>
+                </a>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item propane">
+                    </div>
+                </a>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item deals">
+                    </div>
+                </a>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item png">
+                    </div>
+                </a>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item bermuda">
+                    </div>
+                </a>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item lawn">
+                    </div>
+                </a>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item practice">
+                    </div>
+                <a href="/coming-soon.php">
+                    <div class="portfolio-item travimp">
+                    </div>
+                </a>
             </div>
 
         </section>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Tim Evko // Front End Web Developer</title>
     <meta name="description" content="Tim Evko // Front End Web Developer">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, minimal-ui">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link href='http://fonts.googleapis.com/css?family=Parisienne|Telex' rel='stylesheet' type='text/css'>
     <noscript>
@@ -18,7 +18,13 @@
         <link rel="stylesheet" href="css/legacy.css">
     <![endif]-->
     <!--[if lt IE 9]>
-        <link rel="stylesheet" href="css/legacy.css">
+        <style>
+        .ye-olde-browsers{z-index:999;background-color:#eafdd2;color:#333;width:100%;height:auto;font-size:2em;padding:50px;margin:0;text-align:center;position:fixed;top:0;font-style:italic;display:block}.close{position:absolute;top:5px;left:5px;cursor:pointer}
+        </style>
+        <div class="ye-olde-browsers">
+        <p>Hey! Your browser is out of date! To see this site (and the rest of the web) <br> as it is intended to be viewed, <a href="http://browsehappy.com/">Click Here</a> to update your browser!</p>
+        <div class="close">X<small>&nbsp;(close)</small></div>
+        </div>
     <![endif]-->
 </head>
 <body>

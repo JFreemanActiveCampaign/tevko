@@ -1,0 +1,90 @@
+
+.theStack {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+.theStack--item {
+    list-style-type: none;
+    word-break:break-word;
+    color: white;
+    background-color: orange;
+    margin: .5em 0;
+    padding: .5em;
+    transition: .5s ease;
+    @include bp(medium-screens) {
+        opacity: .2;
+        position: relative;
+        top: 20px;
+        left:-50px;
+        transition: .5s ease;
+        &.skillMagic {
+            opacity: 1;
+            transform:translate(50px,20px);
+            backface-visibility:hidden;
+        }
+    }
+    &.css{
+        width:97%;
+    }
+    &.html{
+        width:98%;
+    }
+    &.js{
+        width:90%;
+    }
+    &.php{
+        width:85%;
+    }
+    &.sql{
+        width:45%;
+    }
+    &.ruby{
+        width:60%
+    }
+    &.node{
+        width:75%;
+    }
+    &.json{
+        width:20%;
+    }
+    &.ajax{
+        width:49%;
+    }
+    &.mvc{
+        width:51%;
+    }
+    &.responsive{
+        width:100%;
+    }
+    &.wp{
+        width:90%;
+    }
+    &.c5{
+        width:89%;
+    }
+    &.drupal{
+        width:65%;
+    }
+    &.magento{
+        width:50%;
+    }
+    &.github{
+        width:100%;
+    }
+    &.adobe{
+        width:87%;
+    }
+    &.mobile{
+        width:91%;
+    }
+    &.template{
+        width:90%;
+    }
+    &.static{
+        width:15%;
+        height: 115px;
+    }
+}
+

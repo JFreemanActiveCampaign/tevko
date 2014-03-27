@@ -1,6 +1,74 @@
 //using https://github.com/Snugug/borealis
 
 !function(a,b){"use strict";function c(){this.nodes=[],this.brlLength=0,this.widths=[],this.points=[],this.callback=void 0}function d(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent("on"+b,function(){return c.call(a,window.event)})}"function"!=typeof Object.getPrototypeOf&&(Object.getPrototypeOf="".__proto__===String.prototype?function(a){return a.__proto__}:function(a){return a.constructor.prototype});for(var e=0,f=["webkit","moz"],g=0;g<f.length&&!window.requestAnimationFrame;++g)window.requestAnimationFrame=window[f[g]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[f[g]+"CancelAnimationFrame"]||window[f[g]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(a,b){b=b;var c=(new Date).getTime(),d=Math.max(0,16-(c-e)),f=window.setTimeout(function(){a(c+d)},d);return e=c+d,f}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)}),c.prototype.query=function(b,c){var d,e=Object.getPrototypeOf(a);c&&"function"==typeof c&&(e.callback=c),b&&"number"!=typeof b?d=b.length:(b=e.nodes,d=e.nodesLength);var f,g=[],h=[];for(f=0;d>f;f++){g.push(b[f].offsetWidth);try{h.push(e.sortObj(b[f].getAttribute("data-borealis-srcs")))}catch(i){h.push({})}}e.widths=g,e.points=h,b&&"number"!=typeof b?e.nodeWrites(b,g,h):c&&"function"!=typeof c?e.nodeWrites():window.requestAnimationFrame(e.nodeWrites)},c.prototype.nodeWrites=function(b){var c,d,e,f=Object.getPrototypeOf(a),g=f.widths,h=f.points;for(b&&"number"!=typeof b?d=b.length:(b=f.nodes,d=f.nodesLength),c=0;d>c;c++){var i=g[c],j=b[c],k=h[c],l=k.length;if(1===l)j.setAttribute("src",k[0].value);else if(i<k[1].key)j.setAttribute("src",k[0].value);else if(i>=k[l-1].key)j.setAttribute("src",k[l-1].value);else for(var m=0;l>m;m++){var n=k[m],o=k[m+1];if(0===m&&i<n.key){j.setAttribute("src",k[0].value);break}if(void 0===o.key){j.setAttribute("src",o.value);break}if(i>=n.key&&i<o.key){j.setAttribute("src",n.value);break}}}f.callback&&(e=f.callback,f.callback=void 0,e(b))},c.prototype.refreshNodes=function(){var b=Object.getPrototypeOf(a);b.nodes=document.querySelectorAll("[data-borealis-srcs]"),b.nodesLength=b.nodes.length},c.prototype.sortObj=function(a){for(var b=[],c=a.split(","),d=0;d<c.length;d++)if(0===d)b.push({key:-1,value:c[d]});else{var e=c[d].replace(/:+/,"").split("");b.push({key:parseFloat(e[0]),value:e[1].replace(/^\s+|\s+$/g,"")})}return b.sort(function(a,b){return a.value-b.value})},c.prototype.styleImages=function(b){b=b||Object.getPrototypeOf(a).nodes;for(var c=b.length,d=0;c>d;d++)b[d].style.width="100%",b[d].style.height="auto"},a=a||new c,b?b(function(){a.refreshNodes(),a.styleImages(),a.query(void 0,!0)}):d(window,"DOMContentLoaded",function(){a.refreshNodes(),a.styleImages(),a.query(void 0,!0)}),d(window,"resize",function(){a.refreshNodes(),window.requestAnimationFrame(a.query)}),"undefined"!=typeof module&&module.exports?module.exports=a:"function"==typeof define&&define.amd?define(function(){return a}):window.borealis=a}(window.borealis,window.domready);
+(function($){
+
+    /**
+     * Copyright 2012, Digital Fusion
+     * Licensed under the MIT license.
+     * http://teamdf.com/jquery-plugins/license/
+     *
+     * @author Sam Sehnert
+     * @desc A small plugin that checks whether elements are within
+     *       the user visible viewport of a web browser.
+     *       only accounts for vertical position, not horizontal.
+     */
+    var $w = $(window);
+    $.fn.visible = function(partial,hidden,direction){
+
+        if (this.length < 1)
+            return;
+
+        var $t        = this.length > 1 ? this.eq(0) : this,
+            t         = $t.get(0),
+            vpWidth   = $w.width(),
+            vpHeight  = $w.height(),
+            direction = (direction) ? direction : 'both',
+            clientSize = hidden === true ? t.offsetWidth * t.offsetHeight : true;
+
+        if (typeof t.getBoundingClientRect === 'function'){
+
+            // Use this native browser method, if available.
+            var rec = t.getBoundingClientRect(),
+                tViz = rec.top    >= 0 && rec.top    <  vpHeight,
+                bViz = rec.bottom >  0 && rec.bottom <= vpHeight,
+                lViz = rec.left   >= 0 && rec.left   <  vpWidth,
+                rViz = rec.right  >  0 && rec.right  <= vpWidth,
+                vVisible   = partial ? tViz || bViz : tViz && bViz,
+                hVisible   = partial ? lViz || lViz : lViz && rViz;
+
+            if(direction === 'both')
+                return clientSize && vVisible && hVisible;
+            else if(direction === 'vertical')
+                return clientSize && vVisible;
+            else if(direction === 'horizontal')
+                return clientSize && hVisible;
+        } else {
+
+            var viewTop         = $w.scrollTop(),
+                viewBottom      = viewTop + vpHeight,
+                viewLeft        = $w.scrollLeft(),
+                viewRight       = viewLeft + vpWidth,
+                offset          = $t.offset(),
+                _top            = offset.top,
+                _bottom         = _top + $t.height(),
+                _left           = offset.left,
+                _right          = _left + $t.width(),
+                compareTop      = partial === true ? _bottom : _top,
+                compareBottom   = partial === true ? _top : _bottom,
+                compareLeft     = partial === true ? _right : _left,
+                compareRight    = partial === true ? _left : _right;
+
+            if(direction === 'both')
+                return !!clientSize && ((compareBottom <= viewBottom) && (compareTop >= viewTop)) && ((compareRight <= viewRight) && (compareLeft >= viewLeft));
+            else if(direction === 'vertical')
+                return !!clientSize && ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+            else if(direction === 'horizontal')
+                return !!clientSize && ((compareRight <= viewRight) && (compareLeft >= viewLeft));
+        }
+    };
+
+})(jQuery);
 (function($, window, undefined){
     navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
     $('.Homenav a, .main-menu a').click(function () {
@@ -29,10 +97,22 @@
         body.classList.add('disable-hover')
       }
 
-      timer = setTimeout(function(){
+      timer = setTimeout(function() {
         body.classList.remove('disable-hover')
       },500);
     }, false);
+    //if our skill element is visible, do something cool to it
+    $(window).scroll(function() {
+        $('.theStack--item').each(function() {
+            if($(this).visible()) {
+                $(this).addClass('skillMagic');
+            }
+        });
+    });
+    //olde borwsers
+    $('.Oldclose').click(function() {
+        $('.ye-olde-browsers').hide();
+    });
 })(jQuery, window);
 
 

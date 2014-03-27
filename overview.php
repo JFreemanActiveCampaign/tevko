@@ -16,24 +16,28 @@
                 <div>
                     <h2>The Stack</h2>
                     <p>I use the following technologies, code systems, and languages:
-                        <ul>
-                            <li>SASS, BEM, SMACSS, and OOCSS for CSS</li>
-                            <li>HTML5</li>
-                            <li>jQuery & Javascript</li>
-                            <li>PHP</li>
-                            <li>Ruby</li>
-                            <li>Node</li>
-                            <li>JSON</li>
-                            <li>Ajax</li>
-                            <li>MVC</li>
-                            <li>Responsive Development & Design</li>
-                            <li>Wordpress</li>
-                            <li>Concrete5</li>
-                            <li>Drupal</li>
-                            <li>Magento</li>
-                            <li>Git & SVN</li>
-                            <li>Mobile First development</li>
-                            <li>Front End Templating</li>
+
+                        <ul class="theStack">
+                            <li class="theStack--item css">SASS, BEM, SMACSS, and OOCSS for CSS</li>
+                            <li class="theStack--item html">HTML5</li>
+                            <li class="theStack--item js">Javascript</li>
+                            <li class="theStack--item php">PHP</li>
+                            <li class="theStack--item sql">SQL</li>
+                            <li class="theStack--item ruby">Ruby</li>
+                            <li class="theStack--item node">Node</li>
+                            <li class="theStack--item json">JSON</li>
+                            <li class="theStack--item ajax">Ajax</li>
+                            <li class="theStack--item mvc">MVC</li>
+                            <li class="theStack--item responsive">Responsive Development & Design</li>
+                            <li class="theStack--item wp">Wordpress</li>
+                            <li class="theStack--item c5">Concrete5</li>
+                            <li class="theStack--item drupal">Drupal</li>
+                            <li class="theStack--item magento">Magento</li>
+                            <li class="theStack--item github">Git & SVN</li>
+                            <li class="theStack--item adobe">Adobe CS</li>
+                            <li class="theStack--item mobile">Mobile First development</li>
+                            <li class="theStack--item template">Front End Templating</li>
+                            <li class="theStack--item static">Static Site Generation</li>
                         </ul>
                     </p>
                 </div>
