@@ -369,6 +369,8 @@ h2 {
   background-color: white;
   z-index: 998;
   width: 100%; }
+  .header--inner .logo {
+    color: gray; }
   .header--inner h1 {
     padding: 0; }
   @media (min-width: 48.75em) {
@@ -639,7 +641,8 @@ svg {
     font-size: 0.75em;
     font-style: italic;
     color: #929292;
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px; }
 
 .hero--image {
   max-width: 100%; }
@@ -650,6 +653,8 @@ svg {
 
 .project-item {
   width: 50%;
+  display: block;
+  margin: 0 auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;

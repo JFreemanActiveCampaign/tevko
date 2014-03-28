@@ -99,7 +99,7 @@
 
       timer = setTimeout(function() {
         body.classList.remove('disable-hover')
-      },500);
+      },200);
     }, false);
     //if our skill element is visible, do something cool to it
     $(window).scroll(function() {

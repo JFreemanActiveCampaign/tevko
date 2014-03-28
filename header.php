@@ -7,6 +7,7 @@
     <title>Tim Evko // Front End Web Developer</title>
     <meta name="description" content="Tim Evko // Front End Web Developer">
     <meta name="viewport" content="width=device-width, minimal-ui">
+    <link rel="icon" type="image/ico" href="/favicon.ico"/>
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link href='http://fonts.googleapis.com/css?family=Parisienne|Telex' rel='stylesheet' type='text/css'>
     <noscript>

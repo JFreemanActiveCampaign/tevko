@@ -16,7 +16,7 @@
                 <p>Find me on Twitter <a href="http://twitter.com/tevko" target="_blank">@Tevko</a> or Email me at timevko (at) gmail (dot) com. I'm also on <a href="http://codepen.io/tevko" target="_blank">Codepen</a> , <a href="http://github.com/tevko" target="_blank">Github</a>, and <a href="http://www.linkedin.com/pub/tim-evko/65/73b/7b4" target="_blank">Linkedin</a>.</p>
                 <div class="projects">
                     <h2>Projects I Work on</h2>
-                    <a href="http://tevko.github.io/practice" target="_blank"><div class="project-item practice"><p>Practice your skills!</p></div></a><a href="https://github.com/tevko/Resources" target="_blank"><div class="project-item resources"><p>Resources for front end web developers</p></div></a><a href="http://github.com/tevko/wp-tevko-responsive-images" target="_blank"><div class="project-item wpResponsive"><p>Practice your skills!</p></div></a>
+                    <a href="http://tevko.github.io/practice" target="_blank"><div class="project-item practice"><p>Practice your skills!</p></div></a><a href="https://github.com/tevko/Resources" target="_blank"><div class="project-item resources"><p>Resources for front end web developers</p></div></a><a href="http://github.com/tevko/wp-tevko-responsive-images" target="_blank"><div class="project-item wpResponsive"><p>Responsive Images<br> for Wordpress</p></div></a>
                 </div>
             </article>
         </section>
