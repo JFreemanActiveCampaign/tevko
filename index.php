@@ -6,6 +6,12 @@
         }
         window.addEventListener("resize",setWindowHeight,false);
         window.addEventListener("load",setWindowHeight,false);
+        var el = document.body;
+        var className = 'isHome';
+        if (el.classList)
+          el.classList.add(className);
+        else
+          el.className += ' ' + className;
     </script>
     <nav class="Homenav" role="main">
         <ul>

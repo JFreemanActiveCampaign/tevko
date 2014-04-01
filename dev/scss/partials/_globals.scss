@@ -46,6 +46,28 @@
 
 body {
     overflow-x: hidden;
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $footer-bg;
+        z-index: 1;
+    }
+}
+
+.isHome {
+    &:before {
+        z-index: -2;
+    }
+}
+
+.off-cancas-body {
+    &:before {
+        z-index:0;
+    }
 }
 
 .group:after {

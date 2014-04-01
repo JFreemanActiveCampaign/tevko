@@ -80,11 +80,13 @@
     $('.nav-button , .main-menu a').click(function() {
     	$('.content').toggleClass('nav-action');
     	$('.nav-button').toggleClass('nav-button_clicked');
+        $('body').toggleClass('off-cancas-body');
     });
     $('.content' ).click(function() {
     	if ($('.content').hasClass('nav-action')) {
     		$('.content').removeClass('nav-action');
     		$('.nav-button').removeClass('nav-button_clicked');
+            $('body').removeClass('off-cancas-body');
     	}
     });
 
