@@ -1,11 +1,9 @@
 {% include header.html %}
 {% include menu.html %}
 <div class="content overview_page">
-    <header class="header--inner">
+    <header class="header--inner blog--header">
         <div class="logo">tevko</div>
     </header>
-    <section class="page wrap">
-        {{ content }}
-    </section>
+    {{ content }}
+    {% include footer.html %}
 </div>
-{% include footer.html %}

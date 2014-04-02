@@ -1,5 +1,5 @@
 
-        <footer>
+        <footer role="contentinfo">
             <div class="footer">
                 // Tevko
             </div>

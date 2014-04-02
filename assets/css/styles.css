@@ -598,38 +598,6 @@ h2 {
 .portfolio-item.travimp {
   background-image: url('../img/travimp-thumb.jpg'); }
 
-svg {
-  max-width: 110px;
-  height: 60px; }
-
-.logoAnimated {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  stroke: white;
-  fill: transparent;
-  -webkit-animation: draw-fill 10s forwards;
-  animation: draw-fill 10s forwards; }
-
-@-webkit-keyframes draw-fill {
-  15% {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 2000; }
-
-  100% {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 2000;
-    fill: white; } }
-
-@keyframes draw-fill {
-  15% {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 2000; }
-
-  100% {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 2000;
-    fill: white; } }
-
 .Homenav {
   height: 100%;
   width: 100%;
@@ -824,3 +792,63 @@ svg {
   .theStack--item.static {
     width: 15%;
     height: 115px; }
+
+@media (min-width: 48.75em) {
+  .blog--header {
+    background-color: transparent;
+    position: absolute; } }
+
+.blog--home {
+  padding-top: 3em; }
+  .blog--home.page {
+    padding-top: 6em; }
+
+.blog-meta {
+  color: #eba424;
+  font-size: 0.75em; }
+
+.blog-post {
+  font-size: 1.25em;
+  line-height: 1.25;
+  margin-bottom: 5em;
+  padding-bottom: 2em; }
+  .blog-post a {
+    font-size: 0.8em; }
+
+.blog--recent-posts {
+  padding-bottom: 2em;
+  list-style-type: none; }
+  .blog--recent-posts li {
+    border-bottom: solid 1px;
+    padding-bottom: 1em;
+    margin: 3em 0; }
+    .blog--recent-posts li:last-child {
+      border-bottom: none; }
+
+.blog-widget-title {
+  text-align: center; }
+
+.blog-recent-widget {
+  padding-bottom: 3em;
+  border-top: solid 1px black;
+  width: 100%;
+  max-width: 30em;
+  margin: 0 auto; }
+  .blog-recent-widget ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+.blog--recent-title {
+  font-size: 1.25em;
+  font-weight: bold; }
+
+.blog--hero {
+  position: relative;
+  max-height: 25em;
+  overflow: hidden; }
+  .blog--hero img {
+    width: 100%; }
+
+.blog--post-title {
+  border: none; }
