@@ -30,7 +30,7 @@
                 <a href="recent-work">Recent work</a>
             </li>
             <li class="home-link blog">
-                <a href="coming-soon">Blog</a>
+                <a href="http://blog.timevko.com">Blog</a>
             </li>
             <li class="home-link contact">
                 <a href="contact">contact</a>

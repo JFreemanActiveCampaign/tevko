@@ -6,7 +6,7 @@
         </li>
         <li class="nav-link inner-recent"><a href="/recent-work">Recent Work</a>
         </li>
-        <li class="nav-link inner-blog"><a href="/coming-soon">Blog</a>
+        <li class="nav-link inner-blog"><a href="http://blog.timevko.com">Blog</a>
         </li>
         <li class="nav-link inner-contact"><a href="/contact">Contact</a>
         </li>
