@@ -17,12 +17,12 @@
 .blog-meta {
     color: #eba424;
     font-size: .75em;
+    font-weight: bold;
 }
 
 .blog-post {
     font-size: 1.25em;
     line-height: 1.25;
-    margin-bottom: 5em;
     padding-bottom: 2em;
     a {
         font-size: .8em;
@@ -48,7 +48,7 @@
 
 .blog-recent-widget {
     padding-bottom:3em;
-    border-top: solid 1px black;
+    border-top: solid 2px black;
     width:100%;
     max-width: 30em;
     margin: 0 auto;
@@ -75,4 +75,28 @@
 
 .blog--post-title {
     border:none;
+}
+
+.blog--img {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+.blog--comments {
+    margin-bottom: 5em;
+    display:none;
+}
+
+.blog--button_comments {
+    @extend %button;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    //hover isn't defined in buttons due to node sass error
+    &:hover {
+        background-color:#eba424;
+        border-color:transparent;
+        color:white;
+    }
 }

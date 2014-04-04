@@ -115,6 +115,12 @@
     $('.Oldclose').click(function() {
         $('.ye-olde-browsers').hide();
     });
+    //blog - show comments onclick of button
+    $('.blog--button_comments').click(function() {
+        var txt = $('.blog--comments').is(':visible') ? 'Show Comments' : 'Hide Comments';
+        $(this).text(txt);
+        $('.blog--comments').toggle();
+    });
 })(jQuery, window);
 
 

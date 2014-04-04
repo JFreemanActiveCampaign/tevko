@@ -9,6 +9,9 @@ cover: http://timevko.com/assets/img/overview.jpg
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
+<p data-height="268" data-theme-id="1265" data-slug-hash="vilDp" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/tevko/pen/vilDp/'>vilDp</a> by Tim (<a href='http://codepen.io/tevko'>@tevko</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+
 Jekyll also offers powerful support for code snippets:
 
 
