@@ -861,3 +861,6 @@ h2 {
     background-color: #eba424;
     border-color: transparent;
     color: white; }
+  @media (min-width: 48.75em) {
+    .blog--button_comments {
+      display: none; } }

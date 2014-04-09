@@ -124,4 +124,7 @@
         border-color:transparent;
         color:white;
     }
+    @include bp(medium-screens) {
+        display:none;
+    }
 }
