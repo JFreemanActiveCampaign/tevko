@@ -30,7 +30,7 @@
                     <div class="portfolio-item lawn">
                     </div>
                 </a>
-                <a href="/coming-soon">
+                <a href="http://tevko.github.io/practice/">
                     <div class="portfolio-item practice">
                     </div>
                 <a href="/coming-soon">
