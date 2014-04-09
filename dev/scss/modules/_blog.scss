@@ -111,6 +111,9 @@
 .blog--comments {
     margin-bottom: 5em;
     display:none;
+    @include bp(medium-screens) {
+        display:block;
+    }
 }
 
 .blog--button_comments {
