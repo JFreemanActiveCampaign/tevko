@@ -26,7 +26,7 @@
                     <div class="portfolio-item bermuda">
                     </div>
                 </a>
-                <a href="/coming-soon">
+                <a href="http://www.lawnelements.com/">
                     <div class="portfolio-item lawn">
                     </div>
                 </a>
