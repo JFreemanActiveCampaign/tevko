@@ -6,11 +6,7 @@
         </header>
         <section class="page">
             <div class="portfolio-gallery group">
-                <a href="/coming-soon">
-                    <div class="portfolio-item streamsend">
-                    </div>
-                </a>
-                <a href="/coming-soon">
+                <a href="http://veecomarketplace.com/">
                     <div class="portfolio-item veeco">
                     </div>
                 </a>

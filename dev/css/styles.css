@@ -359,7 +359,8 @@ h2 {
   padding: 1em;
   border-radius: 5px;
   transition: 0.2s linear;
-  font-weight: bold; }
+  font-weight: bold;
+  outline: none; }
 
 .header {
   vertical-align: middle;
@@ -769,7 +770,10 @@ h2 {
 .blog--home {
   padding-top: 3em; }
   .blog--home.page {
-    padding-top: 6em; }
+    padding-top: 3em; }
+    @media (min-width: 48.75em) {
+      .blog--home.page {
+        padding-top: 6em; } }
 
 .blog-meta {
   color: #eba424;
@@ -781,7 +785,13 @@ h2 {
   line-height: 1.25;
   padding-bottom: 2em; }
   .blog-post a {
-    font-size: 0.8em; }
+    border-bottom: none; }
+  .blog-post .post-img {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: block; }
 
 .blog--recent-posts {
   padding-bottom: 2em;
@@ -806,6 +816,8 @@ h2 {
     list-style-type: none;
     margin: 0;
     padding: 0; }
+    .blog-recent-widget ul li {
+      margin-bottom: 1em; }
 
 .blog--recent-title {
   font-size: 1.25em;
@@ -817,6 +829,15 @@ h2 {
   overflow: hidden; }
   .blog--hero img {
     width: 100%; }
+  .blog--hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    opacity: 0.5; }
 
 .blog--post-title {
   border: none; }

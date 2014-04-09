@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Amerigas PSD to HTML, JS, CSS"
+date:   2014-04-08 22:35:50
+categories: recent-work
+cover: http://timevko.com/assets/img/placeit.jpg
+---
+
+This was a non-responsive site built for Amerigas. A classic PSD to HTML site, no surprises here
+
+<img class="post-img" src="propane-psd-to-html.jpg"/>

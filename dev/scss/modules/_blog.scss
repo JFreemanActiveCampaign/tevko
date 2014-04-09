@@ -10,7 +10,10 @@
 .blog--home {
     padding-top:3em;
     &.page {
-        padding-top:6em;
+        padding-top:3em;
+        @include bp(medium-screens) {
+            padding-top:6em;
+        }
     }
 }
 
@@ -25,7 +28,14 @@
     line-height: 1.25;
     padding-bottom: 2em;
     a {
-        font-size: .8em;
+        border-bottom:none;
+    }
+    .post-img {
+        max-width:100%;
+        margin:0 auto;
+        width:100%;
+        height: auto;
+        display: block;
     }
 }
 
@@ -56,6 +66,9 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+        li {
+            margin-bottom: 1em;
+        }
     }
 }
 
@@ -70,6 +83,16 @@
     overflow: hidden;
     img {
         width:100%;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(240, 240, 240);
+        opacity: .5;
     }
 }
 
