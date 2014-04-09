@@ -836,7 +836,8 @@ h2 {
 
 .blog--recent-posts {
   padding-bottom: 2em;
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 0; }
   .blog--recent-posts li {
     border-bottom: solid 1px;
     padding-bottom: 1em;
@@ -862,7 +863,8 @@ h2 {
 
 .blog--recent-title {
   font-size: 1.25em;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.5; }
 
 .blog--hero {
   position: relative;
