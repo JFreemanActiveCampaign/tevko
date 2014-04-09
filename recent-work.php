@@ -10,7 +10,7 @@
                     <div class="portfolio-item veeco">
                     </div>
                 </a>
-                <a href="/coming-soon">
+                <a href="http://blog.timevko.com/2014/04/08/amerigas/">
                     <div class="portfolio-item propane">
                     </div>
                 </a>

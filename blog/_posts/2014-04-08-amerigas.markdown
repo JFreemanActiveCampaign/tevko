@@ -8,4 +8,4 @@ cover: http://timevko.com/assets/img/placeit.jpg
 
 This was a non-responsive site built for Amerigas. A classic PSD to HTML site, no surprises here
 
-<img class="post-img" src="propane-psd-to-html.jpg"/>
+<img class="post-img" src="http://timevko.com/assets/img/propane-psd-to-html.jpg"/>
