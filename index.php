@@ -1,11 +1,5 @@
 <?php include("header.php"); ?>
     <script>
-        function setWindowHeight(){
-            var windowHeight = window.innerHeight;
-            document.body.style.height = windowHeight + "px";
-        }
-        window.addEventListener("resize",setWindowHeight,false);
-        window.addEventListener("load",setWindowHeight,false);
         var el = document.body;
         var className = 'isHome';
         if (el.classList)
@@ -13,6 +7,11 @@
         else
           el.className += ' ' + className;
     </script>
+    <style>
+        body, html {
+            height:100%;
+        }
+    </style>
     <nav class="Homenav" role="main">
         <ul>
             <li class="home-link header">
