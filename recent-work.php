@@ -6,34 +6,34 @@
         </header>
         <section class="page">
             <div class="portfolio-gallery group">
-                <a href="http://veecomarketplace.com/">
+                <a href="http://veecomarketplace.com/" target="_blank">
                     <div class="portfolio-item veeco">
                     </div>
                 </a>
-                <a href="http://blog.timevko.com/2014/04/08/amerigas/">
+                <a href="http://blog.timevko.com/2014/04/08/amerigas/" target="_blank">
                     <div class="portfolio-item propane">
                     </div>
                 </a>
-                <a href="/coming-soon">
+                <a href="http://dealsfinanced.com/" target="_blank">
                     <div class="portfolio-item deals">
                     </div>
                 </a>
-                <a href="/coming-soon">
+                <a href="/coming-soon" target="_blank">
                     <div class="portfolio-item png">
                     </div>
                 </a>
-                <a href="/coming-soon">
+                <a href="/coming-soon" target="_blank">
                     <div class="portfolio-item bermuda">
                     </div>
                 </a>
-                <a href="http://www.lawnelements.com/">
+                <a href="http://www.lawnelements.com/" target="_blank">
                     <div class="portfolio-item lawn">
                     </div>
                 </a>
-                <a href="http://tevko.github.io/practice/">
+                <a href="http://tevko.github.io/practice/" target="_blank">
                     <div class="portfolio-item practice">
                     </div>
-                <a href="/coming-soon">
+                <a href="/coming-soon" target="_blank">
                     <div class="portfolio-item travimp">
                     </div>
                 </a>
