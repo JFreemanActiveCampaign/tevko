@@ -882,7 +882,8 @@ h2 {
 .blog--hero {
   position: relative;
   max-height: 25em;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 2.75em; }
   .blog--hero img {
     width: 100%; }
   .blog--hero:before {
@@ -894,6 +895,9 @@ h2 {
     bottom: 0;
     background-color: #f0f0f0;
     opacity: 0.5; }
+  @media (min-width: 48.75em) {
+    .blog--hero {
+      padding-top: 0; } }
 
 .blog--post-title {
   border: none; }

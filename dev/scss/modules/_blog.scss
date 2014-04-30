@@ -83,6 +83,7 @@
     position: relative;
     max-height: 25em;
     overflow: hidden;
+    padding-top: 2.75em;
     img {
         width:100%;
     }
@@ -96,6 +97,10 @@
         background-color: rgb(240, 240, 240);
         opacity: .5;
     }
+    @include bp(medium-screens) {
+        padding-top: 0;
+    }
+
 }
 
 .blog--post-title {
