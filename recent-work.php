@@ -22,10 +22,10 @@
                     <div class="portfolio-item png">
                     </div>
                 </a>
-                <a href="/coming-soon" target="_blank">
-                    <div class="portfolio-item bermuda">
-                    </div>
-                </a>
+
+                <div class="portfolio-item bermuda">
+                </div>
+
                 <a href="http://www.lawnelements.com/" target="_blank">
                     <div class="portfolio-item lawn">
                     </div>
@@ -33,7 +33,7 @@
                 <a href="http://tevko.github.io/practice/" target="_blank">
                     <div class="portfolio-item practice">
                     </div>
-                <a href="/coming-soon" target="_blank">
+                <a href="http://blog.timevko.com/2014/04/29/travel-impressions-lp-manager/" target="_blank">
                     <div class="portfolio-item travimp">
                     </div>
                 </a>

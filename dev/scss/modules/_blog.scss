@@ -2,7 +2,7 @@
 
 .blog--header {
     @include bp(medium-screens) {
-        background-color:transparent;
+        background-color:rgba(255, 255, 255, 0.41);
         position: absolute;
     }
 }
