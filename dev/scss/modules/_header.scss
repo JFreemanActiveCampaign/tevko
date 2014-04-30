@@ -60,7 +60,7 @@
 
 //rotate animation for header
 
-@-webkit-keyframes rotateInDownRight {
+@keyframes rotateInDownRight {
     0% {
         //background-color: $footer-bg;
         transform-origin: right bottom;

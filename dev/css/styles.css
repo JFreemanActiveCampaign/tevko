@@ -178,7 +178,6 @@ td, th {
 .content {
   background-color: #F8F8F8;
   color: #333;
-  backface-visibility: hidden;
   position: relative;
   min-height: 100%; }
 
@@ -408,7 +407,7 @@ h2 {
 .disable-hover .header--inner {
   opacity: 0.75; }
 
-@-webkit-keyframes rotateInDownRight {
+@keyframes rotateInDownRight {
   0% {
     transform-origin: right bottom;
     transform: rotate(90deg); }

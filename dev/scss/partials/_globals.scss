@@ -23,7 +23,7 @@
 .content {
     background-color: $content-bg-clr;
     color:$footer-bg;
-    backface-visibility: hidden;
+    //backface-visibility: hidden;
     position:relative;
     min-height:100%;
 }
