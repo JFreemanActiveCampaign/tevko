@@ -50,9 +50,6 @@
         &:last-child {
             border-bottom:none;
         }
-        a {
-            border-bottom: none;
-        }
     }
 }
 
@@ -72,6 +69,9 @@
         padding: 0;
         li {
             margin-bottom: 1em;
+            a {
+                border-bottom:none;
+            }
         }
     }
 }

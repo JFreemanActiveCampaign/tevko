@@ -857,8 +857,6 @@ h2 {
     margin: 3em 0; }
     .blog--recent-posts li:last-child {
       border-bottom: none; }
-    .blog--recent-posts li a {
-      border-bottom: none; }
 
 .blog-widget-title {
   text-align: center; }
@@ -875,6 +873,8 @@ h2 {
     padding: 0; }
     .blog-recent-widget ul li {
       margin-bottom: 1em; }
+      .blog-recent-widget ul li a {
+        border-bottom: none; }
 
 .blog--recent-title {
   font-size: 1.25em;
