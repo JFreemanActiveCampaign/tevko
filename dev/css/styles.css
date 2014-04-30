@@ -385,7 +385,6 @@ h2 {
 .header--inner {
   text-align: center;
   padding: 1.5em 4em;
-  position: relative;
   font-size: 0.5em;
   position: fixed;
   top: 0;
@@ -402,7 +401,7 @@ h2 {
       animation-name: rotateInDownRight;
       animation-fill-mode: both;
       animation-duration: 2.5s;
-      transition: 1s ease; } }
+      transition: opacity 1s ease; } }
 
 .disable-hover .header--inner {
   opacity: 0.75; }
