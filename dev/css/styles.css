@@ -329,6 +329,11 @@ h2 {
 .contact_page .hero h1 {
   text-align: center; }
 
+.overview_page .hero img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; }
+
 @media (min-width: 48.75em) {
   /* 4.85%;  } /* grid_1  */
   /* 13.45%; } /* grid_2  */

@@ -2,7 +2,7 @@
     <?php include("menu.php"); ?>
     <div class="content recent-work">
         <div class="popup">
-            <p>I'm currently employeed buy <a href="http://loewy.com/" target="_blank">Loewy</a></p>
+            <p>I'm currently employed by <a href="http://loewy.com/" target="_blank">Loewy</a></p>
             <p>Some projects featured here have been built for their clients</p>
             <button class="popup-close">Got It!</button>
           </div>
