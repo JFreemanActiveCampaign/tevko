@@ -301,7 +301,30 @@ h2 {
   border-color: #969696; }
 
 .content.recent-work {
-  background-color: white; }
+  background-color: white;
+  position: relative; }
+  .content.recent-work .popup {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 4em;
+    z-index: 999;
+    background-color: white;
+    text-align: center;
+    padding: 3em 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Telex, sans-serif; }
+    .content.recent-work .popup button {
+      margin-top: 20px; }
+      .content.recent-work .popup button:hover {
+        background-color: orange;
+        color: white; }
+    @media (min-width: 48.75em) {
+      .content.recent-work .popup {
+        display: block; } }
 
 .contact_page .hero h1 {
   text-align: center; }
@@ -352,7 +375,7 @@ h2 {
   .last {
     float: right; } }
 
-.blog--button_comments {
+.content.recent-work .popup button, .blog--button_comments {
   border: solid 2px;
   background-color: transparent;
   padding: 1em;

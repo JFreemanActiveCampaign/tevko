@@ -50,4 +50,9 @@
         $(this).text(txt);
         $('.blog--comments').toggle();
     });
+    //close popup
+    $('.popup-close').click(function() {
+        $(this).parent().fadeOut();
+    });
+
 })(jQuery, window);

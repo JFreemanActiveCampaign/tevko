@@ -1,6 +1,11 @@
 <?php include("header.php"); ?>
     <?php include("menu.php"); ?>
     <div class="content recent-work">
+        <div class="popup">
+            <p>I'm currently employeed buy <a href="http://loewy.com/" target="_blank">Loewy</a></p>
+            <p>Some projects featured here have been built for their clients</p>
+            <button class="popup-close">Got It!</button>
+          </div>
         <header class="header--inner">
             <div class="logo">tevko</div>
         </header>
@@ -18,10 +23,10 @@
                     <div class="portfolio-item deals">
                     </div>
                 </a>
-                <a href="/coming-soon" target="_blank">
+
                     <div class="portfolio-item png">
                     </div>
-                </a>
+
 
                 <div class="portfolio-item bermuda">
                 </div>
