@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tips on Writing Better Code</title>
+        <meta name="description" content="Tim Evko // Front End Web Developer">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="http://timevko.com/assets/css/styles.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Parisienne|Telex' rel='stylesheet' type='text/css'>
+        <noscript>
+            <style>
+                .main-menu{position:static!important;z-index:0!important;width:auto!important;background-color:#26414B!important;border-right:solid 5px #818181!important;overflow-y:hidden!important;height:100%!important}.nav-links-container{padding-top:0!important;height:auto!important;margin-top:0!important}.nav-link{list-style:none!important;text-align:center!important;font-size:1.25em!important;height:75px!important;display:inline-table!important;width:19.76%!important}.nav-button{display:none!important;}
+            </style>
+        </noscript>
+        <!--[if IE 9]>
+            <link rel="stylesheet" href="css/legacy.css">
+        <![endif]-->
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="css/legacy.css">
+        <![endif]-->
+    </head>
+    <body>
+<nav class="main-menu">
+    <ul class="nav-links-container">
+        <li class="nav-link inner-home"><a href="http://timevko.com/">Home</a>
+        </li>
+        <li class="nav-link inner-overview"><a href="http://timevko.com/overview">Overview</a>
+        </li>
+        <li class="nav-link inner-recent"><a href="http://timevko.com/recent-work">Recent Work</a>
+        </li>
+        <li class="nav-link inner-blog"><a href="http://blog.timevko.com">Blog</a>
+        </li>
+        <li class="nav-link inner-contact"><a href="http://timevko.com/contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+<div class="nav-button">
+    <div class="icon-list-bullet">
+    </div>
+</div>
+
+<div class="content overview_page">
+    <header class="header--inner blog--header">
+        <div class="logo">tevko</div>
+    </header>
+    <div class="blog--hero">
+    <img src="http://timevko.com/assets/img/placeit.jpg"/>
+</div>
+<section class="page wrap">
+    <h2 class="blog--post-title">Tips on Writing Better Code</h2>
+    <div class="blog-post">
+    <p>In any given week I can expect to write at least a few hundred lines of code in around four different languages. I can also expect to edit, review, and collaborate on code written by the other developers I work with. Simply put, there’s a lot of code flying all over the place, and things can get very complicated when it’s not organized, managed, and most importantly, written well. Let’s look at a few different ways to improve the overall quality of our code.</p>
+
+<ol>
+<li><p>Start Building ModulesOne of the best and most important ways to keep code consistent, reusable, and organized, is to group functionality together. For example rather than dumping all of your javascript into one main.js file, consider grouping them into separate individual files based on functionality, then concatenating them once you reach your build step.<br>
+<strong><em>Resouce:</em></strong> <a href="http://bradfrostweb.com/blog/post/atomic-web-design/">http://bradfrostweb.com/blog/post/atomic-web-design/</a></p></li>
+<li><p>Plan Before You WriteWhen was the last time you sat down and on paper wrote out exactly how you would approach a project? What frameworks do you plan to use, how many browsers are you expected to support, do you plan to use any automated task runners or build systems?<br>
+<strong>Resouce:</strong> <a href="http://www.smashingmagazine.com/2011/06/09/a-comprehensive-website-planning-guide/">http://www.smashingmagazine.com/2011/06/09/a-comprehensive-website-planning-guide/</a></p></li>
+<li><p>Use Version ControlVersion control is a system that records changes to a file or set of files over time, allowing multiple users to edit, track changes, and host assets. There are plenty of services that enable version control, including Bitbucket, Assembla, and Github. Github is my personal favorite, being that it promotes social coding, meaning people will be motivated to share code on Github, while improving and learning about code written by other users.<br>
+<strong>Resouce:</strong> <a href="http://www.smashingmagazine.com/2008/09/18/the-top-7-open-source-version-control-systems/">http://www.smashingmagazine.com/2008/09/18/the-top-7-open-source-version-control-systems/</a></p></li>
+<li><p>Start A Code ReviewThis is way easier to do if you work with a team of developers, but not impossible if you work on your own. The basic idea of a code review is to present some code you’ve written to a group of peers (or superiors) so that you can explain what you’ve written, learn how to write better, and even teach others who may be unfamiliar with the technologies you’ve written. It’s best done weekly, with the goal of learning how to improve what you’ve already written.<br>
+<strong>Resouce:</strong> <a href="http://www.smashingmagazine.com/2011/10/27/lessons-from-a-review-of-javascript-code/">http://www.smashingmagazine.com/2011/10/27/lessons-from-a-review-of-javascript-code/</a></p></li>
+<li><p>Take Coding ChallengesThere are plenty of free resources online that are aimed towards providing challenges for developers looking to get better at languages they use every day. Most of these sites come with a large community willing to help out with needed, so don’t worry about getting stuck and being unable to continue.<br>
+<strong>Resouce:</strong> <a href="http://www.codewars.com/">http://www.codewars.com/</a></p></li>
+</ol>
+
+    <p class="blog-meta">Posted on 22 May 2014</p>
+    </div>
+    <button class="blog--button_comments">Show Comments</button>
+    <div class="blog--comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'timevkoblog'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    <div class="blog-recent-widget">
+        <h3 class="blog-widget-title">Recent Posts</h3>
+        <ul class="recent-posts">
+            
+              <li><span>22 May 2014</span> &raquo; <a href="/2014/05/22/writing-better-code">Tips on Writing Better Code</a></li>
+            
+              <li><span>29 Apr 2014</span> &raquo; <a href="/2014/04/29/travel-impressions-lp-manager">Landing Page Manager & Generator for Travel Impressions</a></li>
+            
+              <li><span>08 Apr 2014</span> &raquo; <a href="/2014/04/08/amerigas">Amerigas PSD to HTML, JS, CSS</a></li>
+            
+        </ul>
+    </div>
+</section>
+            <footer role="contentinfo">
+            <div class="footer">
+                // Blog made with Jekyll
+            </div>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="http://timevko.com/assets/js/main.min.js"></script>
+            <script>
+            var _gaq = [
+                ['_setAccount', 'UA-XXXXX-X'],
+                ['_trackPageview']
+            ];
+            (function(d, t) {
+                var g = d.createElement(t),
+                    s = d.getElementsByTagName(t)[0];
+                g.src = '//www.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s)
+            }(document, 'script'));
+            </script>
+        </footer>
+    </body>
+</html>
+</div>
