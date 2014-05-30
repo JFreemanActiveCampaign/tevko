@@ -119,9 +119,6 @@
 .blog--comments {
     margin-bottom: 5em;
     display:none;
-    @include bp(medium-screens) {
-        display:block;
-    }
 }
 
 .blog--button_comments {
@@ -134,8 +131,5 @@
         background-color:#eba424;
         border-color:transparent;
         color:white;
-    }
-    @include bp(medium-screens) {
-        display:none;
     }
 }

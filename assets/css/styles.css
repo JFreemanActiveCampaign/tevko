@@ -940,9 +940,6 @@ h2 {
 .blog--comments {
   margin-bottom: 5em;
   display: none; }
-  @media (min-width: 48.75em) {
-    .blog--comments {
-      display: block; } }
 
 .blog--button_comments {
   display: block;
@@ -952,6 +949,3 @@ h2 {
     background-color: #eba424;
     border-color: transparent;
     color: white; }
-  @media (min-width: 48.75em) {
-    .blog--button_comments {
-      display: none; } }

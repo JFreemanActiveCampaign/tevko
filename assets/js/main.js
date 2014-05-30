@@ -115,11 +115,19 @@
     $('.Oldclose').click(function() {
         $('.ye-olde-browsers').hide();
     });
-    //blog - show comments onclick of button
+    //blog - show comments onclick of button and load in discuss
     $('.blog--button_comments').click(function() {
+        var cBody = $('.comments_body').html();
         var txt = $('.blog--comments').is(':visible') ? 'Show Comments' : 'Hide Comments';
-        $(this).text(txt);
-        $('.blog--comments').toggle();
+        if($(this).hasClass('clicked')) {
+            $('.blog--comments').append(cBody);
+            $(this).text(txt);
+            $('.blog--comments').toggle();
+        } else {
+            $(this).text(txt);
+            $('.blog--comments').toggle();
+        }
+
     });
     //close popup
     $('.popup-close').click(function() {
