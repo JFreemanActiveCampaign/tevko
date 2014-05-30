@@ -25,11 +25,11 @@
     window.addEventListener('scroll', function() {
       clearTimeout(timer);
       if(!body.classList.contains('disable-hover')) {
-        body.classList.add('disable-hover')
+        body.classList.add('disable-hover');
       }
 
       timer = setTimeout(function() {
-        body.classList.remove('disable-hover')
+        body.classList.remove('disable-hover');
       },200);
     }, false);
     //if our skill element is visible, do something cool to it
@@ -48,10 +48,11 @@
     $('.blog--button_comments').click(function() {
         var cBody = $('.comments_body').html();
         var txt = $('.blog--comments').is(':visible') ? 'Show Comments' : 'Hide Comments';
-        if($(this).hasClass('clicked')) {
+        if(!$(this).hasClass('clicked')) {
             $('.blog--comments').append(cBody);
             $(this).text(txt);
             $('.blog--comments').toggle();
+            $(this).addClass('clicked');
         } else {
             $(this).text(txt);
             $('.blog--comments').toggle();
