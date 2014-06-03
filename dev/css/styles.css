@@ -185,7 +185,8 @@ td, th {
   border-bottom: none; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  word-wrap: break-word; }
 
 .group:after {
   content: "";
