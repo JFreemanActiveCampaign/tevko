@@ -776,7 +776,8 @@ h2 {
 .theStack {
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 2em; }
 
 .theStack--item {
   list-style-type: none;
@@ -842,8 +843,7 @@ h2 {
   .theStack--item.template {
     width: 90%; }
   .theStack--item.static {
-    width: 15%;
-    height: 115px; }
+    width: 46%; }
 
 @media (min-width: 48.75em) {
   .blog--header {
