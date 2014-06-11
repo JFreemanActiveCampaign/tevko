@@ -2,6 +2,14 @@
 
 //home page
 
+//fallback for nojs
+
+.no-js {
+    .header--inner {
+        position: relative!important;
+    }
+}
+
 .header {
     vertical-align: middle;
     display: table-cell;

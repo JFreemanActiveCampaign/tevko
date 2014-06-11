@@ -204,15 +204,6 @@ html {
 
 body {
   overflow-x: hidden; }
-  body:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    z-index: 1; }
 
 .isHome:before {
   z-index: -2; }
@@ -400,6 +391,9 @@ h2 {
   transition: 0.2s linear;
   font-weight: bold;
   outline: none; }
+
+.no-js .header--inner {
+  position: relative !important; }
 
 .header {
   vertical-align: middle;
