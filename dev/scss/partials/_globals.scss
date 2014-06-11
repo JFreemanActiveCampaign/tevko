@@ -1,5 +1,10 @@
 //globals
 
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 .wrap {
     padding: 0 20px;
     margin:0 auto;
