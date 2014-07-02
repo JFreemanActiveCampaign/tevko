@@ -648,6 +648,12 @@ h2 {
 .portfolio-item.travimp {
   background-image: url('../img/travimp-thumb.jpg'); }
 
+.portfolio-item.stargit {
+  background-image: url('../img/stargit-thumb.jpg'); }
+
+.portfolio-item.wpResponsive {
+  background-image: url('../img/wpResponsive-thumb.jpg'); }
+
 .Homenav {
   height: 100%;
   width: 100%;

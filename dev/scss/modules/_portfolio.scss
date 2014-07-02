@@ -44,7 +44,7 @@
 //this mixin is only relative to this module, which is why it is found here
 
 //define each portfolio item img
-@each $portfolio-img-class in streamsend, veeco, propane, deals, png, bermuda, lawn, practice, travimp {
+@each $portfolio-img-class in streamsend, veeco, propane, deals, png, bermuda, lawn, practice, travimp, stargit, wpResponsive {
     .portfolio-item {
         &.#{$portfolio-img-class} {
             background-image:url('../img/#{$portfolio-img-class}-thumb.jpg');

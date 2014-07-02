@@ -11,6 +11,22 @@
         </header>
         <section class="page">
             <div class="portfolio-gallery group">
+                <a href="https://github.com/tevko/wp-tevko-responsive-images" target="_blank">
+                    <div class="portfolio-item wpResponsive">
+                    </div>
+                </a>
+                <a href="http://tevko.github.io/starGit/" target="_blank">
+                    <div class="portfolio-item stargit">
+                    </div>
+                </a>
+                <a href="http://tevko.github.io/practice/" target="_blank">
+                    <div class="portfolio-item practice">
+                    </div>
+                </a>
+                <a href="http://blog.timevko.com/2014/04/29/travel-impressions-lp-manager/" target="_blank">
+                    <div class="portfolio-item travimp">
+                    </div>
+                </a>
                 <a href="http://veecomarketplace.com/" target="_blank">
                     <div class="portfolio-item veeco">
                     </div>
@@ -30,18 +46,6 @@
 
                 <div class="portfolio-item bermuda">
                 </div>
-
-                <a href="http://www.lawnelements.com/" target="_blank">
-                    <div class="portfolio-item lawn">
-                    </div>
-                </a>
-                <a href="http://tevko.github.io/practice/" target="_blank">
-                    <div class="portfolio-item practice">
-                    </div>
-                <a href="http://blog.timevko.com/2014/04/29/travel-impressions-lp-manager/" target="_blank">
-                    <div class="portfolio-item travimp">
-                    </div>
-                </a>
             </div>
 
         </section>
