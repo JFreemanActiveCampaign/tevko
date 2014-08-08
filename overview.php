@@ -6,7 +6,7 @@
         </header>
         <section class="page wrap">
             <div class="hero">
-                <img src="https://lh6.googleusercontent.com/-gmFYvX6GdTw/U9VfMNCa2aI/AAAAAAAAAUA/paMqjKjpZ-w/w612-h611-no/me.JPG" alt="A picture of my face">
+                <img src="/assets/img/me_.jpg" alt="A picture of my face">
                 <div class="hero--copy">
                     <h1 class="h1--page_intro">I Enjoy Building Things for the Web</h1>
                     <p>As a Front End Web Developer, I employ modern and cutting edge coding technologies to create websites, tools, and apps that look great while performing on every browser, device, and screen size. Building the web is my passion and making it better is my goal.</p>
